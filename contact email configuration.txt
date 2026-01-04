@@ -1,0 +1,160 @@
+================================================================================
+           CONTACT FORM EMAIL CONFIGURATION INSTRUCTIONS
+================================================================================
+
+This guide will help you configure where contact form messages are sent.
+
+================================================================================
+QUICK SETUP - JUST CHANGE WHERE MESSAGES ARE RECEIVED
+================================================================================
+
+1. Open this file:
+   C:\Accuro for Use\backend\.env
+
+2. Find this line:
+   NOTIFICATION_EMAIL=iynubauhsoj@gmail.com
+
+3. Change it to your employee's email:
+   NOTIFICATION_EMAIL=youremployee@company.com
+
+4. Save the file
+
+5. Restart the backend server:
+   - Press Ctrl+C in the backend terminal
+   - Run: npm start
+
+DONE! Contact form messages will now go to your employee's email.
+
+================================================================================
+FULL CONFIGURATION - CHANGE SENDER AND RECEIVER
+================================================================================
+
+FILE TO EDIT: C:\Accuro for Use\backend\.env
+
+----------------------------
+What Each Setting Does:
+----------------------------
+
+EMAIL_USER=calibrex.emailer@gmail.com
+↑ This is the Gmail account that SENDS the contact form emails
+
+EMAIL_PASSWORD=crft vnfm idlf tdoh
+↑ This is the app password for the sender Gmail account
+
+NOTIFICATION_EMAIL=iynubauhsoj@gmail.com
+↑ This is where contact form messages are RECEIVED (the employee's email)
+
+----------------------------
+To Use Your Own Gmail to Send Emails:
+----------------------------
+
+1. Open: C:\Accuro for Use\backend\.env
+
+2. Change these lines:
+   EMAIL_USER=your-gmail@gmail.com
+   EMAIL_PASSWORD=your-app-password-here
+   NOTIFICATION_EMAIL=employee@company.com
+
+3. Get a Gmail App Password:
+   a. Go to: https://myaccount.google.com/security
+   b. Enable "2-Step Verification"
+   c. Click "App passwords"
+   d. Generate a new password
+   e. Copy the 16-character password
+   f. Paste it into EMAIL_PASSWORD=
+
+4. Save the .env file
+
+5. Restart the backend:
+   - Stop: Ctrl+C
+   - Start: npm start
+
+================================================================================
+EXAMPLE CONFIGURATIONS
+================================================================================
+
+Example 1: Use Current Gmail, Send to Marketing Team
+-----------------------------------------------------
+EMAIL_USER=calibrex.emailer@gmail.com
+EMAIL_PASSWORD=crft vnfm idlf tdoh
+NOTIFICATION_EMAIL=marketing@accuro.com
+
+
+Example 2: Use Company Gmail, Send to Sales Team
+-----------------------------------------------------
+EMAIL_USER=accuro.info@gmail.com
+EMAIL_PASSWORD=abcd efgh ijkl mnop
+NOTIFICATION_EMAIL=sales@accuro.com
+
+
+Example 3: Use Personal Gmail, Send to Your Email
+-----------------------------------------------------
+EMAIL_USER=myemail@gmail.com
+EMAIL_PASSWORD=wxyz abcd efgh ijkl
+NOTIFICATION_EMAIL=myemail@gmail.com
+
+================================================================================
+TESTING THE CONTACT FORM
+================================================================================
+
+After making changes:
+
+1. Make sure backend is running:
+   cd "C:\Accuro for Use\backend"
+   npm start
+
+2. Make sure frontend is running:
+   cd "C:\Accuro for Use"
+   npm start
+
+3. Go to: http://localhost:3000/contact
+
+4. Fill out and submit the contact form
+
+5. Check the NOTIFICATION_EMAIL inbox for the message!
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: Emails not sending
+Solution:
+  - Check that EMAIL_USER is a valid Gmail address
+  - Make sure EMAIL_PASSWORD is an App Password (not regular password)
+  - Verify "2-Step Verification" is enabled on the Gmail account
+  - Check backend terminal for error messages
+
+Problem: Emails going to spam
+Solution:
+  - Mark the first email as "Not Spam"
+  - Ask IT to whitelist the sender email
+
+Problem: Changes not working
+Solution:
+  - Make sure you saved the .env file
+  - Restart the backend server (Ctrl+C, then npm start)
+  - Wait a few seconds for the server to fully restart
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+• The .env file contains sensitive information - DO NOT share it publicly
+• Keep the EMAIL_PASSWORD secure
+• Always use Gmail App Passwords, not your regular Gmail password
+• After editing .env, you MUST restart the backend server
+• The frontend does NOT need to be restarted
+
+================================================================================
+NEED HELP?
+================================================================================
+
+If you have issues:
+1. Check the backend terminal for error messages
+2. Verify all 3 values in .env are correct
+3. Make sure 2-Step Verification is enabled on Gmail
+4. Test sending an email from the Gmail account manually first
+
+================================================================================
+Last Updated: December 2025
+================================================================================

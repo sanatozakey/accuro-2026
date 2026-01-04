@@ -1,0 +1,12 @@
+# robots.txt for Accuro Website
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+
+# Sitemap location
+Sitemap: https://accuro.com.ph/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1

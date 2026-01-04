@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "1765302433934dch4dv",
+    "firstName": "Joshua",
+    "lastName": "Miguel",
+    "email": "freshbj2022@gmail.com",
+    "phone": "09158890847",
+    "company": "matapat",
+    "subject": "secret",
+    "message": "maui wowie maui wowie maui wowie maui wowie",
+    "status": "new",
+    "createdAt": "2025-12-09T17:47:13.934Z",
+    "updatedAt": "2025-12-09T17:47:13.934Z"
+  },
+  {
+    "_id": "1765302923717dtun2a",
+    "firstName": "Joshua",
+    "lastName": "Miguel",
+    "email": "freshbj2022@gmail.com",
+    "phone": "+639158890847",
+    "company": "matapat",
+    "subject": "secret",
+    "message": "maui wowiemaui wowiemaui wowiemaui wowiemaui wowiemaui wowie",
+    "status": "new",
+    "createdAt": "2025-12-09T17:55:23.717Z",
+    "updatedAt": "2025-12-09T17:55:23.717Z"
+  },
+  {
+    "_id": "17657927875696u30hh",
+    "firstName": "Joshua",
+    "lastName": "Miguel",
+    "email": "joshuamiguel.bunyi.pharma@ust.edu.ph",
+    "phone": "+639158890847",
+    "company": "Technological Institute of the Philippines",
+    "inquiryType": "quote",
+    "productInterest": "Calibration Software",
+    "subject": "secret",
+    "message": "sdfsdf sdfsdfs sdfsdfsdf sdfsdf",
+    "status": "new",
+    "createdAt": "2025-12-15T09:59:47.569Z",
+    "updatedAt": "2025-12-15T09:59:47.569Z"
+  },
+  {
+    "_id": "1765792840752ea90uy",
+    "firstName": "Joshua",
+    "lastName": "Miguel",
+    "email": "joshuamiguel.bunyi.pharma@ust.edu.ph",
+    "phone": "+639158890847",
+    "company": "TIP",
+    "inquiryType": "product",
+    "productInterest": "",
+    "subject": "secret",
+    "message": "hjgjh jhgjhg jhgjhgj",
+    "status": "new",
+    "createdAt": "2025-12-15T10:00:40.752Z",
+    "updatedAt": "2025-12-15T10:00:40.752Z"
+  }
+]
