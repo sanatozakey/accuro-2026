@@ -34,9 +34,6 @@ export function Products() {
       <section className="bg-navy-900 dark:bg-gray-900 text-white py-12 sm:py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 relative z-10">
-          <Badge className="mb-4 bg-blue-600 hover:bg-blue-700 text-white border-0">
-            Products Catalog
-          </Badge>
           <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-3">Beamex Products</h1>
           <p className="text-sm xs:text-base sm:text-lg max-w-2xl text-gray-200">
             Complete range of calibration solutions for all your calibration needs.
@@ -273,9 +270,9 @@ function ProductCard({ product }: { product: Product }) {
           alt={product.name}
           className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
         />
-        <Badge className="absolute top-3 right-3 bg-blue-600 hover:bg-blue-700 text-white border-0 text-[10px]">
+        <span className="absolute top-3 right-3 bg-blue-600 text-white text-[10px] px-2 py-1 rounded-full font-medium">
           {product.category}
-        </Badge>
+        </span>
       </div>
 
       {/* Product Details */}

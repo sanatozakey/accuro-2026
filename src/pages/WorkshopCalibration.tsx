@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { Badge } from '../components/ui/badge';
+
 import { Button } from '../components/ui/button';
 import { ArrowRight, ArrowLeft, Settings, Laptop, Package } from 'lucide-react';
 import { ContactCTA } from '../components/ContactCTA';
@@ -50,7 +50,6 @@ const WorkshopCalibration: React.FC = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="text-center">
-            <Badge className="mb-4 bg-blue-600 hover:bg-blue-700">Workshop Solutions</Badge>
             <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-6 drop-shadow-lg">
               Workshop Calibration
             </h1>
