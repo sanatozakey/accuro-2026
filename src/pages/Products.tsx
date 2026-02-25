@@ -34,7 +34,7 @@ export function Products() {
       <section className="bg-navy-900 dark:bg-gray-900 text-white py-12 sm:py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-3">Beamex Products</h1>
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-3">Beamex products</h1>
           <p className="text-sm xs:text-base sm:text-lg max-w-2xl text-gray-200">
             Complete range of calibration solutions for all your calibration needs.
           </p>
@@ -93,7 +93,7 @@ export function Products() {
                   onChange={(e) => setShowDiscontinued(e.target.checked)}
                   className="w-4 h-4 text-blue-600 border-gray-300 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500"
                 />
-                <span className="text-sm text-gray-700 dark:text-gray-300 whitespace-nowrap">Show Discontinued</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300 whitespace-nowrap">Show discontinued</span>
               </label>
             </div>
           </div>
@@ -131,7 +131,7 @@ export function Products() {
             )}
             {showDiscontinued && (
               <Badge variant="outline" className="dark:border-gray-700 dark:text-gray-300">
-                Including Discontinued
+                Including discontinued
                 <Button
                   variant="ghost"
                   size="sm"
@@ -174,7 +174,7 @@ export function Products() {
                   }}
                   className="bg-blue-600 hover:bg-blue-700"
                 >
-                  Clear All Filters
+                  Clear all filters
                 </Button>
               </CardContent>
             </Card>
@@ -191,7 +191,7 @@ export function Products() {
       {/* Call to Action */}
       <section className="bg-blue-600 dark:bg-blue-700 text-white py-12 sm:py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Need Help Choosing?</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Need help choosing?</h2>
           <p className="text-base sm:text-lg mb-6 max-w-xl mx-auto text-blue-50">
             Our calibration experts are here to help you select the perfect solution.
           </p>
@@ -314,7 +314,7 @@ function ProductCard({ product }: { product: Product }) {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2"
               >
-                View Details
+                View details
                 <ExternalLink className="h-4 w-4" />
               </a>
             </Button>

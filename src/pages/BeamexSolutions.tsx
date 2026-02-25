@@ -23,7 +23,7 @@ const BeamexSolutions: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="text-center">
             <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-6 drop-shadow-lg">
-              Beamex Solutions for Calibration Excellence
+              Beamex solutions for calibration excellence
             </h1>
             <p className="text-base md:text-lg lg:text-xl max-w-4xl mx-auto leading-relaxed drop-shadow-md">
               Since its founding in 1975, <a href="https://www.beamex.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-baseline mx-0.5"><img src="/images/beamex-logo.png" alt="Beamex" className="h-[1.1em] inline-block hover:opacity-80 transition-opacity" /></a> has been a trusted partner for calibration
@@ -55,7 +55,7 @@ const BeamexSolutions: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-3 md:mb-4">
-              Beamex Calibration Ecosystem
+              Beamex calibration ecosystem
             </h2>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Beamex calibration ecosystem is a unique combination of calibration software, calibration equipment and expert services,
@@ -73,7 +73,7 @@ const BeamexSolutions: React.FC = () => {
                   <Database className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                 </div>
                 <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Calibration Management
+                  Calibration management
                 </h3>
                 <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
                   Beamex calibration management software lets you manage instrumentation assets and calibration
@@ -82,7 +82,7 @@ const BeamexSolutions: React.FC = () => {
                 </p>
                 <Link to="/beamex/calibration-management" className="mt-auto">
                   <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </CardContent>
@@ -95,7 +95,7 @@ const BeamexSolutions: React.FC = () => {
                   <Zap className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                 </div>
                 <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Field Calibration
+                  Field calibration
                 </h3>
                 <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
                   Versatile, accurate, and reliable field calibrators for on-site calibration. The Beamex MC6 family meets
@@ -103,7 +103,7 @@ const BeamexSolutions: React.FC = () => {
                 </p>
                 <Link to="/beamex/field-calibration" className="mt-auto">
                   <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </CardContent>
@@ -116,7 +116,7 @@ const BeamexSolutions: React.FC = () => {
                   <Settings className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                 </div>
                 <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Workshop Calibration
+                  Workshop calibration
                 </h3>
                 <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
                   The Beamex CENTRiCAL is a central place for all your workshop calibrations. This standardized yet configurable
@@ -124,7 +124,7 @@ const BeamexSolutions: React.FC = () => {
                 </p>
                 <Link to="/beamex/workshop-calibration" className="mt-auto">
                   <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </CardContent>
@@ -137,7 +137,7 @@ const BeamexSolutions: React.FC = () => {
                   <Users className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                 </div>
                 <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Expert Services and Training
+                  Expert services and training
                 </h3>
                 <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
                   The Beamex team of experienced, world-leading specialists will guide you throughout the solution
@@ -146,7 +146,7 @@ const BeamexSolutions: React.FC = () => {
                 </p>
                 <Link to="/beamex/services" className="mt-auto">
                   <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </CardContent>
@@ -159,7 +159,7 @@ const BeamexSolutions: React.FC = () => {
       <section className="py-8 md:py-12 lg:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-3 md:mb-4">
-            Why Choose Beamex Calibration Ecosystem?
+            Why choose Beamex calibration ecosystem?
           </h2>
         </div>
 
@@ -173,7 +173,7 @@ const BeamexSolutions: React.FC = () => {
             </div>
             <div>
               <h3 className="text-base md:text-h4-mobile lg:text-h4-desktop font-bold mb-1.5 md:mb-2">
-                Secure Digital Data Flow and Data Enabled Decisions
+                Secure digital data flow and data enabled decisions
               </h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 Data is your most valuable asset. Our technology captures data digitally at the measurement source and
@@ -192,7 +192,7 @@ const BeamexSolutions: React.FC = () => {
             </div>
             <div>
               <h3 className="text-base md:text-h4-mobile lg:text-h4-desktop font-bold mb-1.5 md:mb-2">
-                Calibration Excellence
+                Calibration excellence
               </h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 We will help you develop your calibration program and to continuously analyze, improve, manage, and execute.
@@ -209,7 +209,7 @@ const BeamexSolutions: React.FC = () => {
             </div>
             <div>
               <h3 className="text-base md:text-h4-mobile lg:text-h4-desktop font-bold mb-1.5 md:mb-2">
-                Collaboration Platform
+                Collaboration platform
               </h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 Beamex technology acts as a digital enabler. Our platform makes it possible for calibration work orders,
@@ -227,7 +227,7 @@ const BeamexSolutions: React.FC = () => {
             </div>
             <div>
               <h3 className="text-base md:text-h4-mobile lg:text-h4-desktop font-bold mb-1.5 md:mb-2">
-                Sustainable by Design
+                Sustainable by design
               </h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 We design durable, scalable and highly configurable solutions that evolve to meet your changing needs.
@@ -244,7 +244,7 @@ const BeamexSolutions: React.FC = () => {
             </div>
             <div>
               <h3 className="text-base md:text-h4-mobile lg:text-h4-desktop font-bold mb-1.5 md:mb-2">
-                Guided Calibration
+                Guided calibration
               </h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 Calibrate in the field with pre-defined calibration procedures and step-by-step guidance from your Beamex

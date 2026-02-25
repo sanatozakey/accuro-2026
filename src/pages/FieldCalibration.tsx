@@ -58,22 +58,22 @@ const FieldCalibration: React.FC = () => {
   const features = [
     {
       icon: <Gauge className="w-6 h-6 text-primary" />,
-      title: 'Multifunctional Calibration',
+      title: 'Multifunctional calibration',
       description: 'Provides calibration for pressure, temperature, and electrical signals in a single device.',
     },
     {
       icon: <CheckCircle2 className="w-6 h-6 text-primary" />,
-      title: 'High Accuracy',
+      title: 'High accuracy',
       description: 'Ensures precise measurements with traceable, accredited calibration certificates.',
     },
     {
       icon: <Zap className="w-6 h-6 text-primary" />,
-      title: 'Digital Data Flow',
+      title: 'Digital data flow',
       description: 'Documenting calibrators that connect with Beamex software, enabling paperless calibration.',
     },
     {
       icon: <Shield className="w-6 h-6 text-primary" />,
-      title: 'Durable Design',
+      title: 'Durable design',
       description: 'Built for demanding environments with an ergonomic, IP65-rated construction.',
     },
   ];
@@ -100,7 +100,7 @@ const FieldCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link to="/beamex" className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors">
             <ArrowLeft className="w-5 h-5" />
-            <span className="font-medium">Back to Beamex Solutions</span>
+            <span className="font-medium">Back to Beamex solutions</span>
           </Link>
         </div>
       </div>
@@ -142,7 +142,7 @@ const FieldCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
-              Common Features of the Beamex MC6 Family
+              Common features of the Beamex MC6 family
             </h2>
           </div>
 
@@ -166,7 +166,7 @@ const FieldCalibration: React.FC = () => {
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
-            Common Capabilities of the Beamex MC6 Family
+            Common capabilities of the Beamex MC6 family
           </h2>
         </div>
 
@@ -215,7 +215,7 @@ const FieldCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
-              Other Field Calibration Equipment
+              Other field calibration equipment
             </h2>
           </div>
 

@@ -12,7 +12,7 @@ interface ContactCTAProps {
 
 export function ContactCTA({
   productCategory,
-  title = "Ready to Learn More?",
+  title = "Ready to learn more?",
   description = "Have questions or need a quote? Our team is here to help you find the right calibration solution for your needs."
 }: ContactCTAProps) {
   const contactUrl = productCategory
@@ -39,7 +39,7 @@ export function ContactCTA({
                   size="lg"
                   className="bg-white text-navy-900 hover:bg-gray-100 font-semibold text-lg px-8 py-6 h-auto"
                 >
-                  Get In Touch
+                  Get in touch
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>

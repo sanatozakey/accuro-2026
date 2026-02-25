@@ -30,7 +30,7 @@ export function Navbar() {
               to="/beamex"
               className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition"
             >
-              Beamex Solutions
+              Beamex solutions
             </Link>
             <Link
               to="/about"
@@ -90,7 +90,7 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Zap size={20} />
-                <span className="font-medium">Beamex Solutions</span>
+                <span className="font-medium">Beamex solutions</span>
               </Link>
               <Link
                 to="/about"

@@ -32,7 +32,7 @@ const WorkshopCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link to="/beamex" className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors">
             <ArrowLeft className="w-5 h-5" />
-            <span className="font-medium">Back to Beamex Solutions</span>
+            <span className="font-medium">Back to Beamex solutions</span>
           </Link>
         </div>
       </div>
@@ -121,7 +121,7 @@ const WorkshopCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
-              Benefit from a Fully Digital Workflow
+              Benefit from a fully digital workflow
             </h2>
           </div>
 
@@ -178,7 +178,7 @@ const WorkshopCalibration: React.FC = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Settings className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Modular Design</h3>
+                <h3 className="font-bold text-lg mb-2">Modular design</h3>
                 <p className="text-sm text-muted-foreground">
                   Easily configure and expand your workshop solution with modular components that grow with your needs.
                 </p>
@@ -190,7 +190,7 @@ const WorkshopCalibration: React.FC = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Laptop className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Digital Integration</h3>
+                <h3 className="font-bold text-lg mb-2">Digital integration</h3>
                 <p className="text-sm text-muted-foreground">
                   Seamlessly connect with Beamex calibration management software for paperless, automated workflows.
                 </p>
@@ -202,7 +202,7 @@ const WorkshopCalibration: React.FC = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Package className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Flexible Configurations</h3>
+                <h3 className="font-bold text-lg mb-2">Flexible configurations</h3>
                 <p className="text-sm text-muted-foreground">
                   Choose from bench, trolley, or tabletop configurations to fit your workshop space and requirements.
                 </p>

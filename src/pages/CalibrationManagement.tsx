@@ -14,7 +14,7 @@ const CalibrationManagement: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link to="/beamex" className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors">
             <ArrowLeft className="w-5 h-5" />
-            <span className="font-medium">Back to Beamex Solutions</span>
+            <span className="font-medium">Back to Beamex solutions</span>
           </Link>
         </div>
       </div>
@@ -108,7 +108,7 @@ const CalibrationManagement: React.FC = () => {
                 <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 flex items-center justify-center p-4 md:p-8">
                   <div className="text-center">
                     <Cloud className="w-16 h-16 md:w-24 md:h-24 text-primary mx-auto mb-2 md:mb-4" />
-                    <p className="text-sm md:text-base lg:text-lg font-semibold text-primary">Cloud-Based Solution</p>
+                    <p className="text-sm md:text-base lg:text-lg font-semibold text-primary">Cloud-based solution</p>
                   </div>
                 </div>
               </Card>
@@ -126,7 +126,7 @@ const CalibrationManagement: React.FC = () => {
                 <div className="aspect-video bg-gradient-to-br from-navy-50 to-blue-100 dark:from-navy-950 dark:to-blue-900 flex items-center justify-center p-4 md:p-8">
                   <div className="text-center">
                     <Server className="w-16 h-16 md:w-24 md:h-24 text-primary mx-auto mb-2 md:mb-4" />
-                    <p className="text-sm md:text-base lg:text-lg font-semibold text-primary">On-Premises Solution</p>
+                    <p className="text-sm md:text-base lg:text-lg font-semibold text-primary">On-premises solution</p>
                   </div>
                 </div>
               </Card>
@@ -174,7 +174,7 @@ const CalibrationManagement: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6 md:mb-10 lg:mb-12">
             <h2 className="text-xl md:text-h2-mobile lg:text-h2-desktop font-bold mb-2 md:mb-4">
-              Taking CMX to the Next Level
+              Taking CMX to the next level
             </h2>
           </div>
 
@@ -198,7 +198,7 @@ const CalibrationManagement: React.FC = () => {
                 </p>
                 <a href="https://www.beamex.com/calibration-software/beamex-cmx-analytics-dashboard/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="gap-2 text-sm md:text-base w-full md:w-auto">
-                    Read more about CMX Analytics Dashboard <ArrowRight className="w-4 h-4" />
+                    Read more about CMX analytics dashboard <ArrowRight className="w-4 h-4" />
                   </Button>
                 </a>
               </CardContent>

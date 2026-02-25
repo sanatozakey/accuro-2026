@@ -22,13 +22,13 @@ export function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
                 <Link to="/products">
-                  Explore Products
+                  Explore products
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-navy-900">
                 <Link to="/contact">
-                  Contact Us
+                  Contact us
                 </Link>
               </Button>
             </div>
@@ -45,7 +45,7 @@ export function Home() {
                 <CheckCircle2 className="h-6 w-6 text-blue-600 dark:text-blue-400" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Certified Quality</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Certified quality</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">ISO-compliant solutions</p>
               </div>
             </div>
@@ -54,7 +54,7 @@ export function Home() {
                 <Users className="h-6 w-6 text-blue-600 dark:text-blue-400" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Expert Support</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Expert support</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Dedicated technical team</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export function Home() {
                 <TrendingUp className="h-6 w-6 text-blue-600 dark:text-blue-400" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Industry Leader</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Industry leader</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Trusted by top companies</p>
               </div>
             </div>
@@ -77,7 +77,7 @@ export function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Who We Are</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Who we are</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Accuro is a leading provider of high-quality instrumentation and
@@ -118,7 +118,7 @@ export function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Backed by Industry Leaders
+              Backed by industry leaders
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Partnering with the best to deliver exceptional calibration solutions
@@ -138,7 +138,7 @@ export function Home() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Award className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Exclusive Distributor</span>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Exclusive distributor</span>
                 </div>
                 <p className="text-base text-gray-700 dark:text-gray-300">
                   Exclusive distributor of Beamex calibration equipment and
@@ -160,7 +160,7 @@ export function Home() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Users className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Strategic Partners</span>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Strategic partners</span>
                 </div>
                 <p className="text-base text-gray-700 dark:text-gray-300">
                   Partnered with leading industrial automation companies
@@ -181,7 +181,7 @@ export function Home() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <CheckCircle2 className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Certified Experts</span>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Certified experts</span>
                 </div>
                 <p className="text-base text-gray-700 dark:text-gray-300">
                   Certified experts in measurement and calibration technologies
@@ -196,7 +196,7 @@ export function Home() {
       <section className="py-16 sm:py-24 dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Our Products</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Our products</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               We offer a comprehensive range of Beamex calibration equipment and
               accessories for various industrial applications
@@ -279,7 +279,7 @@ export function Home() {
           <div className="text-center mt-10">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
               <Link to="/products">
-                View All Products
+                View all products
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

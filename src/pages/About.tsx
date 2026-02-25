@@ -9,7 +9,7 @@ export function About() {
       <section className="bg-navy-900 text-white py-16 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">About Us</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">About us</h1>
           <p className="mt-6 max-w-3xl text-lg sm:text-xl text-gray-200">
             Learn more about Accuro and our commitment to providing high-quality
             instrumentation and calibration solutions
@@ -22,7 +22,7 @@ export function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              What Drives Us
+              What drives us
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -87,7 +87,7 @@ export function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Our Company</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Our company</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Accuro is a leading provider of high-quality instrumentation and
@@ -156,7 +156,7 @@ export function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Why We Work at Accuro</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Why we work at Accuro</h2>
             </div>
             <Card className="border-2 dark:bg-gray-800 dark:border-gray-700">
               <CardContent className="p-8 space-y-6">
@@ -201,7 +201,7 @@ export function About() {
       <section className="py-16 sm:py-24 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Who We Serve</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Who we serve</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Providing calibration solutions across diverse industries with precision and reliability
             </p>

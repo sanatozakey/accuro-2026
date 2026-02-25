@@ -21,7 +21,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Quick links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-white">
@@ -35,18 +35,18 @@ export function Footer() {
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-white">
-                  About Us
+                  About us
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-white">
-                  Contact Us
+                  Contact us
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+            <h3 className="text-lg font-semibold mb-4">Contact information</h3>
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Phone size={18} className="mr-2" />

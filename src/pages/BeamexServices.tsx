@@ -62,7 +62,7 @@ const BeamexServices: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link to="/beamex" className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors">
             <ArrowLeft className="w-5 h-5" />
-            <span className="font-medium">Back to Beamex Solutions</span>
+            <span className="font-medium">Back to Beamex solutions</span>
           </Link>
         </div>
       </div>
@@ -95,7 +95,7 @@ const BeamexServices: React.FC = () => {
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
-            Calibration Solution Services
+            Calibration solution services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Let the Beamex team of experienced, world-leading specialists guide you throughout the solution lifecycle,
@@ -107,7 +107,7 @@ const BeamexServices: React.FC = () => {
           <Card className="border-2">
             <CardContent className="pt-6">
               <h3 className="text-h3-mobile md:text-h3-desktop font-bold mb-4">
-                Support Throughout the Solution Lifecycle
+                Support throughout the solution lifecycle
               </h3>
               <p className="text-muted-foreground mb-6">
                 Beamex expert services encompass everything from initial discussion and design of your process to the
@@ -149,7 +149,7 @@ const BeamexServices: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
-              Equipment Services
+              Equipment services
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               We provide calibration services, repairs and convenient service plans to help you keep your calibration
@@ -166,7 +166,7 @@ const BeamexServices: React.FC = () => {
                     <Wrench className="w-5 h-5 text-primary" />
                   </div>
                   <CardTitle className="text-h3-mobile md:text-h3-desktop">
-                    Calibration and Repair Services
+                    Calibration and repair services
                   </CardTitle>
                 </div>
               </CardHeader>
@@ -191,7 +191,7 @@ const BeamexServices: React.FC = () => {
             {/* Service Plans */}
             <div className="space-y-6">
               <h3 className="text-h3-mobile md:text-h3-desktop font-bold">
-                Service Plans
+                Service plans
               </h3>
               <p className="text-muted-foreground">
                 Maintain and protect your equipment with the Beamex service plans. The Beamex service plans are contracts
@@ -239,7 +239,7 @@ const BeamexServices: React.FC = () => {
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Expert Guidance</h3>
+                <h3 className="font-bold text-lg mb-2">Expert guidance</h3>
                 <p className="text-sm text-muted-foreground">
                   World-leading specialists with deep industry knowledge and calibration expertise.
                 </p>
@@ -251,7 +251,7 @@ const BeamexServices: React.FC = () => {
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Full Lifecycle Support</h3>
+                <h3 className="font-bold text-lg mb-2">Full lifecycle support</h3>
                 <p className="text-sm text-muted-foreground">
                   Comprehensive services from implementation to ongoing maintenance and optimization.
                 </p>
@@ -263,7 +263,7 @@ const BeamexServices: React.FC = () => {
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Quality Assurance</h3>
+                <h3 className="font-bold text-lg mb-2">Quality assurance</h3>
                 <p className="text-sm text-muted-foreground">
                   Accredited calibration certificates and traceable measurement standards.
                 </p>
