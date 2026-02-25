@@ -168,21 +168,19 @@ export function About() {
             <Card className="border-2 dark:bg-gray-800 dark:border-gray-700">
               <CardContent className="p-8 space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  At Accuro, we're driven by a passion for precision and excellence. Our team consists of
-                  dedicated professionals who are experts in calibration technology and committed to
-                  delivering the highest quality solutions to our clients.
+                  At Accuro, our passion for precision and excellence drives everything we do. Our team
+                  of dedicated professionals brings deep expertise in calibration technology, and we are
+                  committed to delivering solutions of the highest quality to every client we serve.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  We believe in the power of accurate measurements to transform industrial operations.
-                  Whether it's ensuring safety compliance, improving process efficiency, or maintaining
-                  product quality, we understand that calibration is not just a service—it's a critical
-                  component of operational success.
+                  We believe that accurate measurements have the power to transform industrial operations.
+                  From ensuring safety compliance to improving process efficiency and maintaining product
+                  quality, calibration plays a vital role in operational success.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Our mission is to empower businesses with reliable calibration equipment and expert
-                  support. We work closely with each client to understand their unique challenges and
-                  provide tailored solutions that meet their specific needs. By partnering with industry
-                  leaders like{' '}
+                  Our mission is to empower businesses with dependable calibration equipment and expert
+                  guidance. We collaborate closely with each client, understanding their unique challenges
+                  to deliver tailored solutions. Through our partnership with industry leaders like{' '}
                   <a
                     href="https://www.beamex.com/"
                     target="_blank"
@@ -196,9 +194,9 @@ export function About() {
                   technology available.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  What sets us apart is our commitment to building long-term relationships. We don't just
-                  sell equipment—we provide comprehensive solutions that include training, ongoing support,
-                  and maintenance services to ensure our clients achieve optimal results.
+                  What truly sets us apart is our dedication to building lasting relationships. We go
+                  beyond selling equipment by providing comprehensive solutions that include training,
+                  ongoing support, and maintenance services, ensuring our clients achieve optimal results.
                 </p>
               </CardContent>
             </Card>
@@ -244,31 +242,8 @@ export function About() {
               <CardHeader className="p-0">
                 <div className="h-48 overflow-hidden rounded-t-lg bg-gray-50">
                   <img
-                    src="/images/Beamex POC8.png"
-                    alt="Beamex POC8 for Pharmaceutical"
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Award className="h-5 w-5 text-blue-600" />
-                  <CardTitle className="text-xl">Pharmaceutical</CardTitle>
-                </div>
-                <CardDescription className="text-base text-gray-700">
-                  Our calibration solutions help pharmaceutical companies maintain
-                  precise measurements required for quality control and regulatory
-                  compliance.
-                </CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600">
-              <CardHeader className="p-0">
-                <div className="h-48 overflow-hidden rounded-t-lg bg-gray-50">
-                  <img
-                    src="/images/Beamex ePG.png"
-                    alt="Beamex ePG for Power Generation"
+                    src="/images/Beamex CENTRiCAL.png"
+                    alt="Beamex CENTRiCAL for Power Generation"
                     className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -282,6 +257,29 @@ export function About() {
                   We serve power generation facilities with calibration equipment
                   that ensures efficient operations and compliance with
                   environmental regulations.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600">
+              <CardHeader className="p-0">
+                <div className="h-48 overflow-hidden rounded-t-lg bg-gray-50">
+                  <img
+                    src="/images/Beamex MC6.png"
+                    alt="Beamex MC6 for Food & Beverage"
+                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Award className="h-5 w-5 text-blue-600" />
+                  <CardTitle className="text-xl">Food & Beverage</CardTitle>
+                </div>
+                <CardDescription className="text-base text-gray-700">
+                  Our calibration solutions support the food and beverage industry
+                  with precise measurement tools for quality assurance, process
+                  control, and regulatory compliance.
                 </CardDescription>
               </CardContent>
             </Card>

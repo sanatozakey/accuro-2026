@@ -41,7 +41,7 @@ const BeamexSolutions: React.FC = () => {
         <div className="max-w-none space-y-4">
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             With more than 50 years of experience in manufacturing and developing cutting-edge calibrators, systems,
-            and services, Beamex is a trusted advisor for continuous process improvement and sustainable, safe operations.
+            and services, Beamex is a trusted leader for continuous process improvement and sustainable, safe operations.
           </p>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             Beamex has a comprehensive ecosystem of calibration solutions that covers everything from field calibration

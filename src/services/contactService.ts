@@ -32,4 +32,5 @@ class ContactService {
   }
 }
 
-export default new ContactService();
+const contactService = new ContactService();
+export default contactService;

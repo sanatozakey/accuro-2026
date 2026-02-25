@@ -139,7 +139,7 @@ const BeamexServices: React.FC = () => {
         <div className="mt-12 text-center">
           <a href="https://www.beamex.com/services/expert-services/" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="gap-2">
-              Read more about <img src="/images/beamex-logo.png" alt="Beamex" className="h-[1em] inline-block mx-1" /> Expert Services <ArrowRight className="w-4 h-4" />
+              Read more about Beamex Expert Services <ArrowRight className="w-4 h-4" />
             </Button>
           </a>
         </div>

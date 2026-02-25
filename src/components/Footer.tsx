@@ -7,11 +7,14 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img
-              src="https://uploadthingy.s3.us-west-1.amazonaws.com/hm7mtaNdbWyZ81qScpSM5S/accuro_logo.png"
-              alt="Accuro Logo"
-              className="h-10 mb-4 brightness-0 invert"
-            />
+            <div className="flex items-center gap-1 mb-4">
+              <img
+                src="https://uploadthingy.s3.us-west-1.amazonaws.com/hm7mtaNdbWyZ81qScpSM5S/accuro_logo.png"
+                alt="Accuro Logo"
+                className="h-10 brightness-0 invert"
+              />
+              <span className="text-white text-lg font-semibold">, Inc.</span>
+            </div>
             <p className="text-gray-300 mt-2">
               Providing high-quality instrumentation and calibration solutions
               for your industrial needs.
@@ -78,7 +81,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Accuro. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Accuro, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

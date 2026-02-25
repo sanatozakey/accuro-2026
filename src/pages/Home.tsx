@@ -17,7 +17,7 @@ export function Home() {
               Industry-Leading Calibration Solutions
             </Badge>
             <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Instrumentation & Calibration Solutions
+              Instrumentation & calibration solutions
             </h1>
             <p className="text-base xs:text-lg sm:text-xl mb-8 text-gray-200 max-w-2xl">
               Providing high-quality measurement and calibration equipment for
@@ -144,10 +144,10 @@ export function Home() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Award className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                  <Badge variant="secondary">Official Distributor</Badge>
+                  <Badge variant="secondary">Exclusive Distributor</Badge>
                 </div>
                 <p className="text-base text-gray-700 dark:text-gray-300">
-                  Official distributor of Beamex calibration equipment and
+                  Exclusive distributor of Beamex calibration equipment and
                   software solutions
                 </p>
               </CardContent>
@@ -238,30 +238,6 @@ export function Home() {
               <CardHeader className="p-0">
                 <div className="h-48 bg-gray-50 flex items-center justify-center p-4 group-hover:bg-gray-100 transition-colors">
                   <img
-                    src="/images/Beamex MC6.png"
-                    alt="Beamex MC4"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="mb-2 text-xl">Beamex MC4</CardTitle>
-                <CardDescription className="mb-4">
-                  Documenting process calibrator
-                </CardDescription>
-                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <Link to="/products" className="inline-flex items-center">
-                    View details
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
-              <CardHeader className="p-0">
-                <div className="h-48 bg-gray-50 flex items-center justify-center p-4 group-hover:bg-gray-100 transition-colors">
-                  <img
                     src="/images/Beamex FB.png"
                     alt="Beamex FB Series"
                     className="w-full h-full object-contain"
@@ -286,9 +262,9 @@ export function Home() {
               <CardHeader className="p-0">
                 <div className="h-48 bg-gray-50 flex items-center justify-center p-4 group-hover:bg-gray-100 transition-colors">
                   <img
-                    src="/images/Beamex MC6.png"
+                    src="https://www.beamex.com/app/uploads/2022/11/cmx20dashboard20v1-1400x933.jpg"
                     alt="Beamex CMX"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </CardHeader>
@@ -298,10 +274,10 @@ export function Home() {
                   Calibration management software
                 </CardDescription>
                 <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <Link to="/products" className="inline-flex items-center">
+                  <a href="https://www.beamex.com/calibration-software/cmx/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                     View details
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </CardContent>
             </Card>

@@ -98,7 +98,7 @@ const CalibrationManagement: React.FC = () => {
                 <div className="pt-2 md:pt-4">
                   <a href="https://www.beamex.com/calibration-software/beamex-logical/" target="_blank" rel="noopener noreferrer">
                     <Button className="gap-2 text-sm md:text-base w-full md:w-auto">
-                      Read more about <img src="/images/beamex-logo.png" alt="Beamex" className="h-[1em] inline-block mx-1" /> LOGiCAL <ArrowRight className="w-4 h-4" />
+                      Read more about Beamex LOGiCAL <ArrowRight className="w-4 h-4" />
                     </Button>
                   </a>
                 </div>
@@ -160,7 +160,7 @@ const CalibrationManagement: React.FC = () => {
                 <div className="pt-2 md:pt-4">
                   <a href="https://www.beamex.com/calibration-software/beamex-cmx/" target="_blank" rel="noopener noreferrer">
                     <Button className="gap-2 text-sm md:text-base w-full md:w-auto">
-                      Read more about <img src="/images/beamex-logo.png" alt="Beamex" className="h-[1em] inline-block mx-1" /> CMX <ArrowRight className="w-4 h-4" />
+                      Read more about Beamex CMX <ArrowRight className="w-4 h-4" />
                     </Button>
                   </a>
                 </div>
@@ -175,7 +175,7 @@ const CalibrationManagement: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6 md:mb-10 lg:mb-12">
             <h2 className="text-xl md:text-h2-mobile lg:text-h2-desktop font-bold mb-2 md:mb-4">
-              TAKING CMX TO THE NEXT LEVEL
+              Taking CMX to the Next Level
             </h2>
           </div>
 
@@ -224,7 +224,7 @@ const CalibrationManagement: React.FC = () => {
                 </p>
                 <a href="https://www.beamex.com/calibration-software/cmx/business-bridge/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="gap-2 text-sm md:text-base w-full md:w-auto">
-                    Read more about <img src="/images/beamex-logo.png" alt="Beamex" className="h-[1em] inline-block mx-1" /> Business Bridge <ArrowRight className="w-4 h-4" />
+                    Read more about Beamex Business Bridge <ArrowRight className="w-4 h-4" />
                   </Button>
                 </a>
               </CardContent>
