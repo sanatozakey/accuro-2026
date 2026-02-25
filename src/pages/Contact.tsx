@@ -303,7 +303,7 @@ export function Contact() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        placeholder="Your company name (optional)"
+                        placeholder="Your company name"
                       />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -325,6 +325,7 @@ export function Contact() {
                           <option value="technical">Technical support</option>
                           <option value="sales">Sales</option>
                           <option value="general">General inquiry</option>
+                          <option value="others">Others</option>
                         </select>
                       </div>
                       <div>
@@ -342,6 +343,7 @@ export function Contact() {
                           {productCategories.filter(cat => cat !== 'All Products').map((category) => (
                             <option key={category} value={category}>{category}</option>
                           ))}
+                          <option value="others">Others</option>
                         </select>
                         <p className="text-xs text-muted-foreground mt-1">
                           Optional - helps us direct your inquiry
