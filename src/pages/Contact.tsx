@@ -184,7 +184,7 @@ export function Contact() {
             Get in touch with us
           </h1>
           <p className="text-base xs:text-lg sm:text-xl text-gray-200 max-w-3xl">
-            Have questions about our products or services? Contact us today and
+            Do you have questions about our products or services? Contact us today and
             our team will be happy to assist you.
           </p>
         </div>
