@@ -9,10 +9,10 @@ export function About() {
       <section className="bg-navy-900 text-white py-16 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="text-2xl sm:text-3xl font-bold">About us.</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">About us</h1>
           <p className="mt-6 max-w-3xl text-lg sm:text-xl text-gray-200">
             Learn more about Accuro and our commitment to providing high-quality
-            instrumentation and calibration solutions
+            instrumentation and calibration solutions.
           </p>
         </div>
       </section>
@@ -21,7 +21,7 @@ export function About() {
       <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               What drives us?
             </h2>
           </div>
@@ -86,7 +86,7 @@ export function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-6">Our company.</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Our company</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Accuro is the EXCLUSIVE PARTNER in the Philippines of Beamex, a world-leading calibration technology company with over 50 years of experience. Accuro is founded with a vision to deliver excellence in the field of calibration. We have grown in just a few years to become a trusted partner of process industries in the Philippines. Our team of experts is dedicated to understanding our clients' unique needs and providing specialized solutions to achieve optimal performance.
@@ -144,7 +144,7 @@ export function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Why we work at Accuro?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why we work at Accuro?</h2>
             </div>
             <Card className="border-2 dark:bg-gray-800 dark:border-gray-700">
               <CardContent className="p-8 space-y-6">
@@ -188,9 +188,9 @@ export function About() {
       <section className="py-16 sm:py-24 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Who we serve?</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Who we serve?</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Providing calibration solutions across diverse industries with precision and reliability
+              Providing calibration solutions across diverse industries with precision and reliability.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
