@@ -12,8 +12,8 @@ export function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Instrumentation & calibration solutions
+            <h1 className="text-2xl sm:text-3xl font-bold mb-6 leading-tight">
+              Instrumentation & calibration solutions.
             </h1>
             <p className="text-base xs:text-lg sm:text-xl mb-8 text-gray-200 max-w-2xl">
               Providing high-quality measurement and calibration equipment for
@@ -77,7 +77,7 @@ export function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Who we are</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6">Who we are.</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Accuro is a leading provider of high-quality instrumentation and
@@ -117,11 +117,11 @@ export function Home() {
       <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Backed by industry leaders
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+              Backed by industry leaders.
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Partnering with the best to deliver exceptional calibration solutions
+              Partnering with the best to deliver exceptional calibration solutions.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -196,81 +196,81 @@ export function Home() {
       <section className="py-16 sm:py-24 dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Our products</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold">Our products.</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               We offer a comprehensive range of Beamex calibration equipment and
               accessories for various industrial applications
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
               <CardHeader className="p-0">
-                <div className="h-48 bg-gray-50 flex items-center justify-center p-4 group-hover:bg-gray-100 transition-colors">
+                <div className="h-48 bg-gray-50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors">
                   <img
-                    src="/images/Beamex MC6.png"
-                    alt="Beamex MC6"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="mb-2 text-xl">Beamex MC6</CardTitle>
-                <CardDescription className="mb-4">
-                  Advanced field calibrator and communicator
-                </CardDescription>
-                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <Link to="/products" className="inline-flex items-center">
-                    View details
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
-              <CardHeader className="p-0">
-                <div className="h-48 bg-gray-50 flex items-center justify-center p-4 group-hover:bg-gray-100 transition-colors">
-                  <img
-                    src="/images/Beamex FB.png"
-                    alt="Beamex FB Series"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="mb-2 text-xl">Beamex FB Series</CardTitle>
-                <CardDescription className="mb-4">
-                  Field temperature block
-                </CardDescription>
-                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <Link to="/products" className="inline-flex items-center">
-                    View details
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
-              <CardHeader className="p-0">
-                <div className="h-48 bg-gray-50 flex items-center justify-center p-4 group-hover:bg-gray-100 transition-colors">
-                  <img
-                    src="https://www.beamex.com/app/uploads/2022/11/cmx20dashboard20v1-1400x933.jpg"
-                    alt="Beamex CMX"
+                    src="/images/Field Calibrators.png"
+                    alt="Field calibrators"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </CardHeader>
               <CardContent className="p-6">
-                <CardTitle className="mb-2 text-xl">Beamex CMX</CardTitle>
+                <CardTitle className="mb-2 text-xl">Field calibrators</CardTitle>
                 <CardDescription className="mb-4">
-                  Calibration management software
+                  Advanced field calibrator and communicator.
                 </CardDescription>
                 <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <a href="https://www.beamex.com/calibration-software/cmx/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
+                  <Link to="/beamex/field-calibration" className="inline-flex items-center">
                     View details
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
+              <CardHeader className="p-0">
+                <div className="h-48 bg-gray-50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors">
+                  <img
+                    src="/images/Calibration Management.webp"
+                    alt="Calibration management"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <CardTitle className="mb-2 text-xl">Calibration management</CardTitle>
+                <CardDescription className="mb-4">
+                  Calibration management software.
+                </CardDescription>
+                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
+                  <Link to="/beamex/calibration-management" className="inline-flex items-center">
+                    View details
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
+              <CardHeader className="p-0">
+                <div className="h-48 bg-gray-50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors">
+                  <img
+                    src="/images/Workshop Calibration.jpg"
+                    alt="Workshop calibration"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <CardTitle className="mb-2 text-xl">Workshop calibration</CardTitle>
+                <CardDescription className="mb-4">
+                  Professional workshop calibration solutions.
+                </CardDescription>
+                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
+                  <Link to="/beamex/workshop-calibration" className="inline-flex items-center">
+                    View details
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

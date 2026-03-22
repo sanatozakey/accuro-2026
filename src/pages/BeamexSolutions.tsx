@@ -26,9 +26,9 @@ const BeamexSolutions: React.FC = () => {
               Beamex solutions for calibration excellence
             </h1>
             <p className="text-base md:text-lg lg:text-xl max-w-4xl mx-auto leading-relaxed drop-shadow-md">
-              Since its founding in 1975, <a href="https://www.beamex.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-baseline mx-0.5"><img src="/images/beamex-logo.png" alt="Beamex" className="h-[1.1em] inline-block hover:opacity-80 transition-opacity" /></a> has been a trusted partner for calibration
+              Since its founding in 1975, <a href="https://www.beamex.com" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity">Beamex</a> has been a trusted partner for calibration
               excellence, helping its customers to continuously improve efficiency, ensure compliance, and increase
-              safety in their operations. <a href="https://www.beamex.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-baseline mx-0.5"><img src="/images/beamex-logo.png" alt="Beamex" className="h-[1.1em] inline-block hover:opacity-80 transition-opacity" /></a> sets the industry standard with its way of working, its expertise,
+              safety in their operations. <a href="https://www.beamex.com" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity">Beamex</a> sets the industry standard with its way of working, its expertise,
               and its innovative calibration technology that provides accurate measurements, reliable data, and traceability.
             </p>
           </div>
@@ -64,8 +64,17 @@ const BeamexSolutions: React.FC = () => {
             </p>
           </div>
 
+          {/* Ecosystem Image */}
+          <div className="mt-8 md:mt-12 mb-8 md:mb-12">
+            <img
+              src="/images/Beamex calibration ecosystem.png"
+              alt="Beamex calibration ecosystem"
+              className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+            />
+          </div>
+
           {/* Four Main Solutions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 mt-8 md:mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {/* Calibration Management */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary flex flex-col h-full">
               <CardContent className="p-4 md:p-6 flex flex-col flex-grow">

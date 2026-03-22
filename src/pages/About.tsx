@@ -1,5 +1,5 @@
 import React from 'react'
-import { Building2, Target, Users, Award, TrendingUp, Shield, ExternalLink } from 'lucide-react'
+import { Building2, Target, Users, Award, TrendingUp, Shield } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card'
 
 export function About() {
@@ -9,7 +9,7 @@ export function About() {
       <section className="bg-navy-900 text-white py-16 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">About us</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold">About us.</h1>
           <p className="mt-6 max-w-3xl text-lg sm:text-xl text-gray-200">
             Learn more about Accuro and our commitment to providing high-quality
             instrumentation and calibration solutions
@@ -21,8 +21,8 @@ export function About() {
       <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              What drives us
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+              What drives us?
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -54,10 +54,9 @@ export function About() {
                     href="https://www.beamex.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center align-baseline gap-1"
+                    className="underline hover:opacity-80 transition-opacity"
                   >
-                    <img src="/images/beamex-logo.png" alt="Beamex" className="h-[1em] inline-block hover:opacity-80 transition-opacity" />
-                    <ExternalLink className="h-3 w-3 text-blue-600 dark:text-blue-400" />
+                    Beamex
                   </a>{' '}
                   to provide world-class calibration equipment and software
                 </p>
@@ -87,21 +86,10 @@ export function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Our company</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6">Our company.</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                Accuro is a leading provider of high-quality instrumentation and
-                calibration solutions for various industries. We specialize in
-                Beamex products, offering the best measurement and calibration
-                equipment to ensure accuracy and reliability in your operations.
-              </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                Founded with a vision to deliver excellence in calibration
-                technology, we have grown to become a trusted partner for
-                businesses across the Philippines and beyond. Our team of
-                experts is dedicated to understanding your unique needs and
-                providing tailored solutions that help you achieve optimal
-                performance.
+                Accuro is the EXCLUSIVE PARTNER in the Philippines of Beamex, a world-leading calibration technology company with over 50 years of experience. Accuro is founded with a vision to deliver excellence in the field of calibration. We have grown in just a few years to become a trusted partner of process industries in the Philippines. Our team of experts is dedicated to understanding our clients' unique needs and providing specialized solutions to achieve optimal performance.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 At Accuro, we believe in building long-term relationships with
@@ -156,7 +144,7 @@ export function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Why we work at Accuro</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Why we work at Accuro?</h2>
             </div>
             <Card className="border-2 dark:bg-gray-800 dark:border-gray-700">
               <CardContent className="p-8 space-y-6">
@@ -178,10 +166,9 @@ export function About() {
                     href="https://www.beamex.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center align-baseline gap-1"
+                    className="underline hover:opacity-80 transition-opacity"
                   >
-                    <img src="/images/beamex-logo.png" alt="Beamex" className="h-[1em] inline-block hover:opacity-80 transition-opacity" />
-                    <ExternalLink className="h-3 w-3 text-blue-600 dark:text-blue-400" />
+                    Beamex
                   </a>
                   , we ensure our clients have access to the most advanced calibration
                   technology available.
@@ -201,19 +188,19 @@ export function About() {
       <section className="py-16 sm:py-24 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Who we serve</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Who we serve?</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Providing calibration solutions across diverse industries with precision and reliability
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600">
               <CardHeader className="p-0">
-                <div className="h-48 overflow-hidden rounded-t-lg bg-gray-50">
+                <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="/images/Beamex MC6-Ex.png"
-                    alt="Beamex MC6-Ex for Oil & Gas"
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    src="/images/Oil & Gas.png"
+                    alt="Oil & Gas"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </CardHeader>
@@ -232,11 +219,11 @@ export function About() {
 
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600">
               <CardHeader className="p-0">
-                <div className="h-48 overflow-hidden rounded-t-lg bg-gray-50">
+                <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="/images/Beamex CENTRiCAL.png"
-                    alt="Beamex CENTRiCAL for Power Generation"
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    src="/images/Power Generation.png"
+                    alt="Power Generation"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </CardHeader>
@@ -255,11 +242,11 @@ export function About() {
 
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600">
               <CardHeader className="p-0">
-                <div className="h-48 overflow-hidden rounded-t-lg bg-gray-50">
+                <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="/images/Beamex MC6.png"
-                    alt="Beamex MC6 for Food & Beverage"
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    src="/images/Food & Beverage.png"
+                    alt="Food & Beverage"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </CardHeader>
@@ -272,6 +259,28 @@ export function About() {
                   Our calibration solutions support the food and beverage industry
                   with precise measurement tools for quality assurance, process
                   control, and regulatory compliance.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600">
+              <CardHeader className="p-0">
+                <div className="h-48 overflow-hidden rounded-t-lg">
+                  <img
+                    src="/images/Compliance-driven industries with skilled workforce.png"
+                    alt="Compliance-driven industries with skilled workforce"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Shield className="h-5 w-5 text-blue-600" />
+                  <CardTitle className="text-xl">Compliance-driven industries with skilled workforce</CardTitle>
+                </div>
+                <CardDescription className="text-base text-gray-700">
+                  Supporting industries that require strict regulatory compliance
+                  with skilled calibration professionals and reliable solutions.
                 </CardDescription>
               </CardContent>
             </Card>
