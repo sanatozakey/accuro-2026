@@ -6,18 +6,31 @@ import { Phone, Mail, ArrowRight } from 'lucide-react';
 
 interface ContactCTAProps {
   productCategory?: string;
+  solution?: string;
+  model?: string;
+  inquiryType?: 'quote' | 'product' | 'technical' | 'general';
   title?: string;
   description?: string;
+  buttonText?: string;
 }
 
 export function ContactCTA({
   productCategory,
-  title = "Ready to learn more?",
-  description = "Have questions or need a quote? Our team is here to help you find the right calibration solution for your needs."
+  solution,
+  model,
+  inquiryType = 'quote',
+  title = "Ready to upgrade your calibration workflow?",
+  description = "Get in touch with Accuro's certified Beamex specialists in the Philippines for official pricing, system design, or on-site demonstration.",
+  buttonText,
 }: ContactCTAProps) {
-  const contactUrl = productCategory
-    ? `/contact?product=${encodeURIComponent(productCategory)}`
-    : '/contact';
+  const params = new URLSearchParams();
+  if (inquiryType) params.set('type', inquiryType);
+  if (productCategory) params.set('product', productCategory);
+  if (solution) params.set('solution', solution);
+  if (model) params.set('model', model);
+
+  const contactUrl = `/contact?${params.toString()}`;
+  const displayButtonText = buttonText || (inquiryType === 'quote' ? 'Request an Official Quote' : 'Get in touch');
 
   return (
     <section className="py-12 md:py-16 bg-gradient-to-br from-navy-900 via-navy-800 to-blue-900 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 text-white">
@@ -39,7 +52,7 @@ export function ContactCTA({
                   size="lg"
                   className="bg-white text-navy-900 hover:bg-gray-100 font-semibold text-lg px-8 py-6 h-auto"
                 >
-                  Get in touch
+                  {displayButtonText}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, FileText } from 'lucide-react'
 import contactService from '../services/contactService'
 import { useAuth } from '../contexts/AuthContext'
 import { Card, CardContent } from '../components/ui/card'
@@ -24,6 +24,8 @@ export function Contact() {
     company: '',
     inquiryType: '',
     productInterest: '',
+    industry: '',
+    timeline: '',
     subject: '',
     message: '',
   })
@@ -51,15 +53,48 @@ export function Contact() {
     }
   }, [user])
 
-  // Pre-populate product interest from URL parameter
+  // Pre-populate fields from URL parameters
   useEffect(() => {
+    const typeParam = searchParams.get('type')
     const productParam = searchParams.get('product')
-    if (productParam) {
-      setFormData(prev => ({
-        ...prev,
-        productInterest: productParam,
-      }))
-    }
+    const solutionParam = searchParams.get('solution')
+    const modelParam = searchParams.get('model')
+    const industryParam = searchParams.get('industry')
+
+    setFormData(prev => {
+      const next = { ...prev }
+      if (typeParam === 'quote') {
+        next.inquiryType = 'quote'
+      }
+      if (productParam) {
+        next.productInterest = productParam
+      } else if (solutionParam) {
+        const lower = solutionParam.toLowerCase()
+        if (lower.includes('field') || lower.includes('mc6')) {
+          next.productInterest = 'Field Calibrators'
+        } else if (lower.includes('workshop') || lower.includes('centrical')) {
+          next.productInterest = 'Workshop Calibrators'
+        } else if (lower.includes('software') || lower.includes('management') || lower.includes('cmx') || lower.includes('logical')) {
+          next.productInterest = 'Calibration Software'
+        } else if (lower.includes('service')) {
+          next.productInterest = 'Accessories'
+        }
+      }
+
+      if (modelParam) {
+        next.subject = `Official Quotation Request: ${modelParam}`
+        if (!next.message) {
+          next.message = `Hello Accuro Technical Team,\n\nWe would like to request an official quotation, technical specifications, and delivery lead time for ${modelParam}.\n\nPlease include applicable ISO 17025 calibration certification options.`
+        }
+      } else if (typeParam === 'quote' && !next.subject) {
+        next.subject = 'Official Beamex Quotation Request'
+      }
+
+      if (industryParam) {
+        next.industry = industryParam
+      }
+      return next
+    })
   }, [searchParams])
 
   // Real-time validation functions
@@ -142,7 +177,18 @@ export function Contact() {
     setLoading(true)
 
     try {
-      await contactService.create(formData)
+      let finalMessage = formData.message;
+      const metaTags = [];
+      if (formData.industry) metaTags.push(`[Industry: ${formData.industry}]`);
+      if (formData.timeline) metaTags.push(`[Timeline: ${formData.timeline}]`);
+      if (metaTags.length > 0 && !finalMessage.includes('[Industry:')) {
+        finalMessage = `${metaTags.join(' ')}\n\n${formData.message}`;
+      }
+
+      await contactService.create({
+        ...formData,
+        message: finalMessage,
+      })
       setSuccess(true)
       setFormData({
         firstName: '',
@@ -152,6 +198,8 @@ export function Contact() {
         company: user?.company || '',
         inquiryType: '',
         productInterest: '',
+        industry: '',
+        timeline: '',
         subject: '',
         message: '',
       })
@@ -218,6 +266,27 @@ export function Contact() {
 
               <Card className="border-2 shadow-lg dark:bg-gray-900 dark:border-gray-700">
                 <CardContent className="pt-6">
+                  {formData.inquiryType === 'quote' && (
+                    <div className="mb-6 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 flex items-start gap-3">
+                      <div className="p-2 rounded-lg bg-blue-600 text-white flex-shrink-0 mt-0.5">
+                        <FileText className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-1.5">
+                          <h4 className="text-sm font-bold text-blue-900 dark:text-blue-200">
+                            Official Beamex Quotation Guarantee
+                          </h4>
+                          <span className="text-[10px] uppercase font-bold bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200 px-1.5 py-0.2 rounded">
+                            24h Turnaround
+                          </span>
+                        </div>
+                        <p className="text-xs text-blue-700 dark:text-blue-300 mt-1">
+                          Our local Philippine calibration engineers will prepare an itemized quotation including standard accessories, ISO 17025 certification options, and local warranty coverage.
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
@@ -295,7 +364,7 @@ export function Contact() {
                     </div>
                     <div>
                       <Label htmlFor="company">
-                        Company
+                        Company / Facility Name
                       </Label>
                       <Input
                         type="text"
@@ -303,7 +372,7 @@ export function Contact() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        placeholder="Your company name"
+                        placeholder="e.g. Petron Bataan, First Gen, San Miguel"
                       />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -320,17 +389,17 @@ export function Contact() {
                           className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                         >
                           <option value="">Select inquiry type...</option>
-                          <option value="product">Product inquiry</option>
-                          <option value="quote">Request quote</option>
-                          <option value="technical">Technical support</option>
-                          <option value="sales">Sales</option>
+                          <option value="quote">Request formal quotation</option>
+                          <option value="product">Product specification inquiry</option>
+                          <option value="technical">Technical support / calibration service</option>
+                          <option value="sales">Sales consultation</option>
                           <option value="general">General inquiry</option>
                           <option value="others">Others</option>
                         </select>
                       </div>
                       <div>
                         <Label htmlFor="productInterest">
-                          Product category
+                          Product or solution category
                         </Label>
                         <select
                           id="productInterest"
@@ -343,13 +412,56 @@ export function Contact() {
                           {productCategories.filter(cat => cat !== 'All Products').map((category) => (
                             <option key={category} value={category}>{category}</option>
                           ))}
+                          <option value="Beamex Services & Training">Beamex Services & Training</option>
                           <option value="others">Others</option>
                         </select>
-                        <p className="text-xs text-muted-foreground mt-1">
-                          Optional - helps us direct your inquiry
-                        </p>
                       </div>
                     </div>
+
+                    {/* Industry Sector & Expected Timeline */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <Label htmlFor="industry">
+                          Industry Sector
+                        </Label>
+                        <select
+                          id="industry"
+                          name="industry"
+                          value={formData.industry}
+                          onChange={handleChange}
+                          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        >
+                          <option value="">Select your industry sector...</option>
+                          <option value="Power Generation & Utilities">Power Generation & Utilities</option>
+                          <option value="Oil & Gas / Petrochemical">Oil & Gas / Petrochemical</option>
+                          <option value="Pharmaceutical & Life Sciences (21 CFR Part 11)">Pharmaceutical & Life Sciences (21 CFR Part 11)</option>
+                          <option value="Food & Beverage Processing">Food & Beverage Processing</option>
+                          <option value="Chemical Manufacturing">Chemical Manufacturing</option>
+                          <option value="Calibration & Metrology Lab (ISO/IEC 17025)">Calibration & Metrology Lab (ISO/IEC 17025)</option>
+                          <option value="Water & Environmental Utilities">Water & Environmental Utilities</option>
+                          <option value="Other Industry">Other Industry</option>
+                        </select>
+                      </div>
+                      <div>
+                        <Label htmlFor="timeline">
+                          Expected Timeline / Urgency
+                        </Label>
+                        <select
+                          id="timeline"
+                          name="timeline"
+                          value={formData.timeline}
+                          onChange={handleChange}
+                          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        >
+                          <option value="">Select project timeline...</option>
+                          <option value="Immediate (< 1 month)">Immediate (&lt; 1 month)</option>
+                          <option value="1 to 3 months">1 to 3 months</option>
+                          <option value="3 to 6 months">3 to 6 months</option>
+                          <option value="Budgeting for Next Fiscal Year">Budgeting for Next Fiscal Year</option>
+                        </select>
+                      </div>
+                    </div>
+
                     <div>
                       <Label htmlFor="subject">
                         Subject *
@@ -374,7 +486,7 @@ export function Contact() {
                         rows={5}
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder="Your message (minimum 20 characters)"
+                        placeholder="Describe your calibration application, tag numbers, or models needed (minimum 20 characters)"
                         minLength={20}
                         maxLength={2000}
                         required
@@ -388,10 +500,18 @@ export function Contact() {
                         type="submit"
                         disabled={loading}
                         size="lg"
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-blue-600 hover:bg-blue-700 font-semibold"
                       >
-                        {loading ? 'Sending...' : 'Send message'}
-                        <Send size={18} className="ml-2" />
+                        {loading
+                          ? 'Processing...'
+                          : formData.inquiryType === 'quote'
+                          ? 'Request Official Quotation'
+                          : 'Send Message'}
+                        {formData.inquiryType === 'quote' ? (
+                          <FileText size={18} className="ml-2" />
+                        ) : (
+                          <Send size={18} className="ml-2" />
+                        )}
                       </Button>
                     </div>
                   </form>

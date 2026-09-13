@@ -1,40 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle2, Award, Users, TrendingUp } from 'lucide-react'
-import { Button } from '../components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, CheckCircle2, Award, Users, TrendingUp } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { HeroSlider } from '../components/HeroSlider';
+import { BeamexPartnerBadge } from '../components/BeamexPartnerBadge';
+import { ClientTrustGrid } from '../components/ClientTrustGrid';
+import { CalibrationSolutionFinder } from '../components/CalibrationSolutionFinder';
+import { ContactCTA } from '../components/ContactCTA';
 
 export function Home() {
   return (
     <div className="w-full bg-background">
-      {/* Hero Section */}
-      <section className="bg-navy-900 text-white py-16 sm:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 opacity-90" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-6 leading-tight">
-              Instrumentation & calibration solutions
-            </h1>
-            <p className="text-base xs:text-lg sm:text-xl mb-8 text-gray-200 max-w-2xl">
-              Providing high-quality measurement and calibration equipment for
-              industrial applications with precision and reliability.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                <Link to="/products">
-                  Explore products
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-navy-900">
-                <Link to="/contact">
-                  Contact us
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Dynamic Moving Hero Slider (Addressing Feedback 1) */}
+      <HeroSlider />
 
       {/* Key Features Strip */}
       <section className="py-8 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
@@ -71,41 +50,44 @@ export function Home() {
         </div>
       </section>
 
+
       {/* Who We Are Section */}
       <section className="py-16 sm:py-24 dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
+              {/* Official Partner Badge */}
               <div>
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Who we are</h2>
+                <BeamexPartnerBadge variant="eyebrow" className="mb-4" />
+                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Who we are</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                Accuro is a leading provider of high-quality instrumentation and
-                calibration solutions for various industries. We specialize in
-                Beamex products, offering the best measurement and calibration
-                equipment to ensure accuracy and reliability in your operations.
+                Accuro is the exclusive distributor and authorized partner of Beamex in the Philippines, providing high-quality instrumentation and calibration solutions for industrial applications. We specialize in the complete Beamex ecosystem—from portable field calibrators to standardized CENTRiCAL workshop benches and digital calibration management software.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                With years of experience and expertise, we help our clients
-                optimize their processes, improve efficiency, and maintain
-                compliance with industry standards.
+                With deep local industry expertise backed by Beamex's 50+ years of Nordic calibration excellence, we help our clients optimize their processes, eliminate transcription errors, improve operational efficiency, and maintain strict compliance with ISO/IEC 17025 and global audit standards.
               </p>
               <Button asChild variant="link" className="p-0 h-auto text-blue-600 hover:text-blue-800">
-                <Link to="/about" className="inline-flex items-center text-lg">
+                <Link to="/about" className="inline-flex items-center text-lg font-semibold">
                   Learn more about us
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg blur opacity-20"></div>
-              <Card className="relative overflow-hidden border-2">
-                <CardContent className="p-0">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg blur opacity-20" />
+              <Card className="relative overflow-hidden border-2 shadow-xl">
+                <CardContent className="p-0 relative">
                   <img
                     src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    alt="Industrial facility"
+                    alt="Industrial calibration facility"
                     className="w-full h-auto rounded-lg"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent" />
+                  {/* Floating Trust Badge overlay */}
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <BeamexPartnerBadge variant="card" />
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -113,7 +95,10 @@ export function Home() {
         </div>
       </section>
 
-      {/* Backed by Company */}
+      {/* Philippine Client Trust Proof Grid */}
+      <ClientTrustGrid />
+
+      {/* Backed by Industry Leaders */}
       <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -121,7 +106,7 @@ export function Home() {
               Backed by industry leaders
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Partnering with the best to deliver exceptional calibration solutions.
+              Partnering with Beamex to deliver world-standard measurement and calibration solutions.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -141,8 +126,7 @@ export function Home() {
                   <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Exclusive distributor</span>
                 </div>
                 <p className="text-base text-gray-700 dark:text-gray-300">
-                  Exclusive distributor of Beamex calibration equipment and
-                  software solutions
+                  Exclusive partner and distributor of Beamex calibration equipment and software solutions across the Philippines.
                 </p>
               </CardContent>
             </Card>
@@ -163,7 +147,7 @@ export function Home() {
                   <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Strategic partners</span>
                 </div>
                 <p className="text-base text-gray-700 dark:text-gray-300">
-                  Partnered with leading industrial automation companies
+                  Partnered with leading industrial automation and process control enterprises nationwide.
                 </p>
               </CardContent>
             </Card>
@@ -184,7 +168,7 @@ export function Home() {
                   <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Certified experts</span>
                 </div>
                 <p className="text-base text-gray-700 dark:text-gray-300">
-                  Certified experts in measurement and calibration technologies
+                  Certified experts in precision measurement, ISO 17025 compliance, and automated calibration workflows.
                 </p>
               </CardContent>
             </Card>
@@ -196,30 +180,29 @@ export function Home() {
       <section className="py-16 sm:py-24 dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold">Our products</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold">Our products & solutions</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              We offer a comprehensive range of Beamex calibration equipment and
-              accessories for various industrial applications
+              We offer the complete ecosystem of Beamex calibration equipment, software, and accessories for process industries.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600 flex flex-col h-full">
               <CardHeader className="p-0">
-                <div className="h-48 bg-gray-50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors">
+                <div className="h-44 bg-gray-50 dark:bg-gray-900/50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors p-4">
                   <img
                     src="/images/Field Calibrators.png"
                     alt="Field calibrators"
-                    className="w-full h-full object-cover"
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="mb-2 text-xl">Field calibrators</CardTitle>
-                <CardDescription className="mb-4">
-                  Advanced field calibrator and communicator.
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <CardTitle className="mb-2 text-lg">Field calibrators</CardTitle>
+                <CardDescription className="mb-4 flex-grow text-sm">
+                  Advanced multifunction documenting calibrators (MC6 family) for pressure, temperature, and electrical signals.
                 </CardDescription>
-                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <Link to="/beamex/field-calibration" className="inline-flex items-center">
+                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent mt-auto">
+                  <Link to="/beamex/field-calibration" className="inline-flex items-center font-semibold text-sm">
                     View details
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -227,23 +210,23 @@ export function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
+            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600 flex flex-col h-full">
               <CardHeader className="p-0">
-                <div className="h-48 bg-gray-50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors">
+                <div className="h-44 bg-gray-50 dark:bg-gray-900/50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors p-4">
                   <img
                     src="/images/Calibration Management.webp"
                     alt="Calibration management"
-                    className="w-full h-full object-cover"
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="mb-2 text-xl">Calibration management</CardTitle>
-                <CardDescription className="mb-4">
-                  Calibration management software.
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <CardTitle className="mb-2 text-lg">Calibration management</CardTitle>
+                <CardDescription className="mb-4 flex-grow text-sm">
+                  Cloud (LOGiCAL) and enterprise on-premise (CMX) software for automated paperless calibration management.
                 </CardDescription>
-                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <Link to="/beamex/calibration-management" className="inline-flex items-center">
+                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent mt-auto">
+                  <Link to="/beamex/calibration-management" className="inline-flex items-center font-semibold text-sm">
                     View details
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -251,23 +234,47 @@ export function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600">
+            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600 flex flex-col h-full">
               <CardHeader className="p-0">
-                <div className="h-48 bg-gray-50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors">
+                <div className="h-44 bg-gray-50 dark:bg-gray-900/50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors p-4">
                   <img
                     src="/images/Workshop Calibration.jpg"
                     alt="Workshop calibration"
-                    className="w-full h-full object-cover"
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="mb-2 text-xl">Workshop calibration</CardTitle>
-                <CardDescription className="mb-4">
-                  Professional workshop calibration solutions.
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <CardTitle className="mb-2 text-lg">Workshop calibration</CardTitle>
+                <CardDescription className="mb-4 flex-grow text-sm">
+                  Standardized yet configurable Beamex CENTRiCAL test benches, trolleys, and tabletop cases.
                 </CardDescription>
-                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent">
-                  <Link to="/beamex/workshop-calibration" className="inline-flex items-center">
+                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent mt-auto">
+                  <Link to="/beamex/workshop-calibration" className="inline-flex items-center font-semibold text-sm">
+                    View details
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-2 hover:border-blue-600 flex flex-col h-full">
+              <CardHeader className="p-0">
+                <div className="h-44 bg-gray-50 dark:bg-gray-900/50 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors p-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Calibration services and training"
+                    className="max-h-full max-w-full object-cover rounded group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <CardTitle className="mb-2 text-lg">Calibration services</CardTitle>
+                <CardDescription className="mb-4 flex-grow text-sm">
+                  Local ISO 17025 re-calibration, service agreements, software integration, and technician training.
+                </CardDescription>
+                <Button asChild variant="ghost" className="w-full justify-start p-0 h-auto text-blue-600 hover:text-blue-800 hover:bg-transparent mt-auto">
+                  <Link to="/beamex/services" className="inline-flex items-center font-semibold text-sm">
                     View details
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -278,8 +285,8 @@ export function Home() {
 
           <div className="text-center mt-10">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-              <Link to="/products">
-                View all products
+              <Link to="/beamex">
+                View all Beamex solutions
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -287,6 +294,16 @@ export function Home() {
         </div>
       </section>
 
+      {/* Interactive Calibration Solution Finder */}
+      <CalibrationSolutionFinder />
+
+      {/* Conversion Contact CTA */}
+      <ContactCTA
+        title="Need an Official Quotation or Technical Demonstration?"
+        description="Connect directly with Accuro's certified Beamex application engineers in the Philippines. We provide itemized quotes, compliance advisories, and on-site demonstrations."
+        inquiryType="quote"
+        buttonText="Request Official Beamex Quote"
+      />
     </div>
-  )
+  );
 }

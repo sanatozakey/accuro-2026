@@ -39,6 +39,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/knowledge-hub" className="text-gray-300 hover:text-white">
+                  Knowledge Hub
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-gray-300 hover:text-white">
                   Contact us
                 </Link>
@@ -65,18 +70,30 @@ export function Footer() {
               </li>
             </ul>
             <div className="mt-6 pt-6 border-t border-gray-700">
-              <h4 className="text-sm font-semibold mb-3">Partners</h4>
+              <h4 className="text-sm font-semibold mb-3 text-white">Authorized Partner</h4>
               <a
                 href="https://www.beamex.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition flex items-center gap-2"
+                className="inline-block p-2.5 rounded-xl bg-white hover:bg-gray-100 transition-all shadow-md group"
               >
-                <span className="flex items-center gap-1">
-                  Visit <img src="/images/beamex-logo.png" alt="Beamex" className="h-[1em] inline-block mx-1" /> Official Website
-                </span>
-                <ExternalLink size={16} />
+                <img
+                  src="/images/beamex-expert-partner-accuro.png"
+                  alt="Beamex Expert Partner - Accuro"
+                  className="h-9 w-auto object-contain"
+                />
               </a>
+              <div className="mt-2 text-xs text-gray-400">
+                <a
+                  href="https://www.beamex.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition inline-flex items-center gap-1"
+                >
+                  <span>Visit Beamex.com</span>
+                  <ExternalLink size={12} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

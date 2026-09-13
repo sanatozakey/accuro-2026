@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { LoadingSpinner } from './components/LoadingSpinner'
+import { ScrollToTop } from './components/ScrollToTop'
 
 // Lazy load pages for better performance
 const Home = lazy(() => import('./pages/Home').then(module => ({ default: module.Home })))
@@ -14,6 +15,7 @@ const CalibrationManagement = lazy(() => import('./pages/CalibrationManagement')
 const FieldCalibration = lazy(() => import('./pages/FieldCalibration'))
 const WorkshopCalibration = lazy(() => import('./pages/WorkshopCalibration'))
 const BeamexServices = lazy(() => import('./pages/BeamexServices'))
+const KnowledgeHub = lazy(() => import('./pages/KnowledgeHub'))
 
 interface AppRouterProps {
   showSplash: boolean;
@@ -22,6 +24,7 @@ interface AppRouterProps {
 export function AppRouter({ showSplash }: AppRouterProps) {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Suspense fallback={<LoadingSpinner size="lg" text="Loading..." />}>
         <Routes>
           <Route
@@ -91,6 +94,18 @@ export function AppRouter({ showSplash }: AppRouterProps) {
                 <BeamexServices />
               </Layout>
             }
+          />
+          <Route
+            path="/knowledge-hub"
+            element={
+              <Layout showSplash={showSplash}>
+                <KnowledgeHub />
+              </Layout>
+            }
+          />
+          <Route
+            path="/resources"
+            element={<Navigate to="/knowledge-hub" replace />}
           />
         </Routes>
       </Suspense>

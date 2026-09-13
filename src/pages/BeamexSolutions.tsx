@@ -5,6 +5,8 @@ import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { ArrowRight, CheckCircle2, Shield, TrendingUp, Users, Zap, Database, Settings } from 'lucide-react';
 import { ContactCTA } from '../components/ContactCTA';
+import { CalibrationSolutionFinder } from '../components/CalibrationSolutionFinder';
+import { BeamexVideoSection } from '../components/BeamexVideoSection';
 
 const BeamexSolutions: React.FC = () => {
   return (
@@ -73,89 +75,143 @@ const BeamexSolutions: React.FC = () => {
             />
           </div>
 
-          {/* Four Main Solutions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-            {/* Calibration Management */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary flex flex-col h-full">
-              <CardContent className="p-4 md:p-6 flex flex-col flex-grow">
-                <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg mb-3 md:mb-4 mx-auto">
-                  <Database className="w-6 h-6 md:w-8 md:h-8 text-primary" />
-                </div>
-                <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Calibration management
-                </h3>
-                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
-                  Beamex calibration management software lets you manage instrumentation assets and calibration
-                  procedures – what, when and how to calibrate. Analyze high-quality digital data, identify trends,
-                  create reports, generate calibration certificates and ensure compliance.
-                </p>
-                <Link to="/beamex/calibration-management" className="mt-auto">
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
+          {/* Four Main Solutions with Value On Top & Pictures */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Field Calibration */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary flex flex-col h-full">
-              <CardContent className="p-4 md:p-6 flex flex-col flex-grow">
-                <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg mb-3 md:mb-4 mx-auto">
-                  <Zap className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
+              <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                  Value on top
+                </span>
+                <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
+                  Zero Pen & Paper
+                </span>
+              </div>
+              <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
+                <img
+                  src="/images/Field Calibrators.png"
+                  alt="Beamex Field Calibrators"
+                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <div className="flex items-center gap-2 mb-2">
+                  <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    Field calibration
+                  </h3>
                 </div>
-                <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Field calibration
-                </h3>
-                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
-                  Versatile, accurate, and reliable field calibrators for on-site calibration. The Beamex MC6 family meets
-                  the diverse calibration needs of process industries worldwide, including hazardous environments.
+                <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">
+                  Portable multifunction documenting calibrators (MC6 family) for high-accuracy pressure, temperature, and electrical calibrations in safe and hazardous zones.
                 </p>
                 <Link to="/beamex/field-calibration" className="mt-auto">
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button variant="outline" className="w-full group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    Explore field calibration <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* Workshop Calibration */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary flex flex-col h-full">
-              <CardContent className="p-4 md:p-6 flex flex-col flex-grow">
-                <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg mb-3 md:mb-4 mx-auto">
-                  <Settings className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
+              <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                  Value on top
+                </span>
+                <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
+                  Modular & Ergonomic
+                </span>
+              </div>
+              <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
+                <img
+                  src="/images/Workshop Calibration.jpg"
+                  alt="Beamex Workshop Calibration Bench"
+                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <div className="flex items-center gap-2 mb-2">
+                  <Settings className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    Workshop calibration
+                  </h3>
                 </div>
-                <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Workshop calibration
-                </h3>
-                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
-                  The Beamex CENTRiCAL is a central place for all your workshop calibrations. This standardized yet configurable
-                  solution is easy to use, versatile, and ergonomic for professional workshop calibration.
+                <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">
+                  Beamex CENTRiCAL test benches, mobile trolleys, and tabletop modules providing standardized, ESD-protected precision workstations.
                 </p>
                 <Link to="/beamex/workshop-calibration" className="mt-auto">
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button variant="outline" className="w-full group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    Explore workshop solutions <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Calibration Management */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
+              <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                  Value on top
+                </span>
+                <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
+                  100% Audit-Ready
+                </span>
+              </div>
+              <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
+                <img
+                  src="/images/Calibration Management.webp"
+                  alt="Beamex Calibration Management Software"
+                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <div className="flex items-center gap-2 mb-2">
+                  <Database className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    Calibration management
+                  </h3>
+                </div>
+                <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">
+                  Beamex LOGiCAL (cloud) and CMX (enterprise on-premise) software with bMobile app for digital asset management, trend analysis, and automated certificates.
+                </p>
+                <Link to="/beamex/calibration-management" className="mt-auto">
+                  <Button variant="outline" className="w-full group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    Explore software <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
             {/* Expert Services */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary flex flex-col h-full">
-              <CardContent className="p-4 md:p-6 flex flex-col flex-grow">
-                <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg mb-3 md:mb-4 mx-auto">
-                  <Users className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
+              <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                  Value on top
+                </span>
+                <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
+                  Certified Engineers
+                </span>
+              </div>
+              <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
+                <img
+                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  alt="Beamex Expert Services and Training"
+                  className="max-h-full max-w-full object-cover rounded group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-5 flex flex-col flex-grow">
+                <div className="flex items-center gap-2 mb-2">
+                  <Users className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    Calibration services
+                  </h3>
                 </div>
-                <h3 className="text-lg md:text-h3-mobile lg:text-h3-desktop font-bold text-center mb-2 md:mb-3">
-                  Expert services and training
-                </h3>
-                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed">
-                  The Beamex team of experienced, world-leading specialists will guide you throughout the solution
-                  lifecycle, from definition to daily operation. We provide calibration services, repairs and convenient
-                  service plans to help you keep your equipment operating at its full potential.
+                <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">
+                  Local and global specialists delivering ISO 17025 re-calibration, maintenance agreements, software implementation, and technician certification.
                 </p>
                 <Link to="/beamex/services" className="mt-auto">
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button variant="outline" className="w-full group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    Explore services <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </CardContent>
@@ -265,11 +321,20 @@ const BeamexSolutions: React.FC = () => {
         </div>
       </section>
 
+      {/* Interactive Calibration Solution Finder */}
+      <CalibrationSolutionFinder />
+
+      {/* Official Beamex Video Demonstrations */}
+      <BeamexVideoSection />
+
       {/* Contact CTA Section */}
       <ContactCTA
         productCategory="Beamex Solutions"
-        title="Interested in Beamex Solutions?"
-        description="Contact us to discuss how Beamex calibration solutions can improve your operations, ensure compliance, and increase safety."
+        solution="beamex-solutions"
+        inquiryType="quote"
+        title="Interested in the Complete Beamex Ecosystem?"
+        description="Schedule a technical consultation with Accuro's local Filipino calibration engineers to evaluate your instrumentation assets."
+        buttonText="Request Consultation & Quote"
       />
     </div>
   );

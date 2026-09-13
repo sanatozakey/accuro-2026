@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { MenuIcon, Sun, Moon, Home, Info, Mail, Zap } from 'lucide-react'
+import { MenuIcon, Sun, Moon, Home, Info, Mail, Zap, BookOpen } from 'lucide-react'
 import { useTheme } from '../contexts/ThemeContext'
 
 export function Navbar() {
@@ -11,13 +11,15 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-sm transition-colors">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
-            <img
-              src="https://uploadthingy.s3.us-west-1.amazonaws.com/hm7mtaNdbWyZ81qScpSM5S/accuro_logo.png"
-              alt="Accuro Logo"
-              className="h-10"
-            />
-          </Link>
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center">
+              <img
+                src="https://uploadthingy.s3.us-west-1.amazonaws.com/hm7mtaNdbWyZ81qScpSM5S/accuro_logo.png"
+                alt="Accuro Logo"
+                className="h-9 sm:h-10 w-auto"
+              />
+            </Link>
+          </div>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6 items-center">
             <Link
@@ -37,6 +39,12 @@ export function Navbar() {
               className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition"
             >
               About
+            </Link>
+            <Link
+              to="/knowledge-hub"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition"
+            >
+              Knowledge Hub
             </Link>
             <Link
               to="/contact"
@@ -99,6 +107,14 @@ export function Navbar() {
               >
                 <Info size={20} />
                 <span className="font-medium">About</span>
+              </Link>
+              <Link
+                to="/knowledge-hub"
+                className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <BookOpen size={20} />
+                <span className="font-medium">Knowledge Hub</span>
               </Link>
               <Link
                 to="/contact"
