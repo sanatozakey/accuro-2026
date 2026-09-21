@@ -16,7 +16,7 @@ export function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">About us</h1>
           <p className="mt-4 max-w-3xl text-lg sm:text-xl text-gray-200">
-            Accuro is the exclusive partner and sole authorized distributor of Beamex in the Philippines, delivering world-class instrumentation, calibration solutions, and metrology services.
+            Accuro is the exclusive partner and distributor of Beamex in the Philippines, delivering world-class instrumentation, calibration solutions, and metrology services.
           </p>
         </div>
       </section>
@@ -49,11 +49,11 @@ export function About() {
                   </div>
 
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
-                    Accuro is the only distributor of Beamex in the Philippines
+                    Accuro is the exclusive distributor of Beamex in the Philippines
                   </h2>
 
                   <p className="text-base sm:text-lg text-slate-700 dark:text-gray-300 leading-relaxed">
-                    As the sole authorized Beamex Expert Partner in the country, Accuro is your exclusive local provider for genuine Beamex calibrators, authentic factory warranties, ISO/IEC 17025 accredited recalibration, and direct Nordic engineering support.
+                    As the exclusive Beamex Expert Partner in the country, Accuro is your exclusive local provider for genuine Beamex calibrators, authentic factory warranties, ISO/IEC 17025 accredited recalibration, and direct Nordic engineering support.
                   </p>
 
                   {/* Guarantee Grid */}
@@ -69,7 +69,7 @@ export function About() {
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-gray-900/60 border border-slate-200 dark:border-gray-700 text-slate-800 dark:text-gray-200">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="font-semibold block text-slate-900 dark:text-white">Sole Philippine rights</strong>
+                        <strong className="font-semibold block text-slate-900 dark:text-white">Exclusive Philippine rights</strong>
                         <span className="text-xs text-slate-600 dark:text-gray-400">Exclusive sales, software licensing, and authorized servicing.</span>
                       </div>
                     </div>
@@ -145,7 +145,7 @@ export function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-base text-gray-700 dark:text-gray-300">
-                  Partnering with industry leaders like{' '}
+                  Partnering with global leaders like{' '}
                   <a
                     href="https://www.beamex.com/"
                     target="_blank"
@@ -186,7 +186,7 @@ export function About() {
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our company</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                Accuro is founded with a vision to deliver excellence in the field of calibration. As the exclusive distributor and authorized partner of Beamex in the Philippines, we bring over 50 years of Nordic metrology innovation directly to local industrial operations.
+                Accuro is founded with a vision to deliver excellence in the field of calibration. As the exclusive distributor of Beamex in the Philippines, we bring over 50 years of Nordic metrology innovation directly to local industrial operations.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 We have grown to become the trusted calibration partner of the country's most demanding process industries—including power generation, oil & gas, pharmaceuticals, and food & beverage. Our team of certified metrologists understands our clients' unique challenges and delivers end-to-end solutions that guarantee measurement integrity, regulatory compliance, and audit readiness.
@@ -195,41 +195,20 @@ export function About() {
                 At Accuro, we believe in building lasting relationships. We provide not just premium hardware, but complete lifecycle support—including on-site commissioning, ISO/IEC 17025 accredited calibration, CMX software integration, and comprehensive personnel training.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="overflow-hidden border-2">
-                <CardContent className="p-0">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-2xl blur opacity-20" />
+              <Card className="relative overflow-hidden border-2 shadow-2xl rounded-2xl">
+                <CardContent className="p-0 relative">
                   <img
-                    src="/images/Beamex MC6.png"
-                    alt="Beamex MC6 calibrator"
-                    className="w-full h-full object-contain bg-gray-50 p-4"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    alt="Accuro calibration and metrology team"
+                    className="w-full h-80 sm:h-96 object-cover"
                   />
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden border-2 mt-8">
-                <CardContent className="p-0">
-                  <img
-                    src="/images/Beamex CENTRiCAL.png"
-                    alt="Beamex CENTRiCAL"
-                    className="w-full h-full object-contain bg-gray-50 p-4"
-                  />
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden border-2">
-                <CardContent className="p-0">
-                  <img
-                    src="/images/Beamex Temperature Sensors.png"
-                    alt="Beamex temperature sensors"
-                    className="w-full h-full object-contain bg-gray-50 p-4"
-                  />
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden border-2 mt-8">
-                <CardContent className="p-0">
-                  <img
-                    src="/images/Calibration Pumps.png"
-                    alt="Calibration pumps"
-                    className="w-full h-full object-contain bg-gray-50 p-4"
-                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-sm font-semibold">The Accuro team</p>
+                    <p className="text-xs text-gray-300">Dedicated calibration and metrology specialists</p>
+                  </div>
                 </CardContent>
               </Card>
             </div>

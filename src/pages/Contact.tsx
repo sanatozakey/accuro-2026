@@ -554,12 +554,14 @@ export function Contact() {
                           Office address
                         </h3>
                         <p className="text-lg text-gray-700 dark:text-gray-200 font-medium">
-                          Unit 2229, Viera Residences
+                          Room 305 Annex Verde Oro Bldg.
                         </p>
                         <p className="text-lg text-gray-700 dark:text-gray-200 font-medium">
-                          Scout Tuason Avenue, Barangay Obrero
+                          535 Commonwealth Ave.
                         </p>
-                        <p className="text-lg text-gray-700 dark:text-gray-200 font-medium">Quezon City, Philippines</p>
+                        <p className="text-lg text-gray-700 dark:text-gray-200 font-medium">
+                          Quezon City, Metro Manila, 1119 Philippines
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -572,7 +574,7 @@ export function Contact() {
                     <iframe
                       title="Office Location"
                       className="w-full h-full border-0"
-                      src="https://www.google.com/maps?q=Viera+Residences,+6+Sct.+Tuason+St,+Diliman,+Quezon+City,+1103+Metro+Manila&output=embed&z=17"
+                      src="https://www.google.com/maps?q=Verde+Oro+Building,+535+Commonwealth+Ave,+Quezon+City,+1119+Metro+Manila&output=embed&z=17"
                       allowFullScreen
                       loading="lazy"
                     ></iframe>

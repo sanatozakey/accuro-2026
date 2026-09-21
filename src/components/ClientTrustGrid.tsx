@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Zap, Flame, Droplets, Utensils, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Zap, Flame, Droplets, Utensils, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 interface ClientTrustGridProps {
   title?: string;
@@ -11,16 +11,13 @@ interface ClientTrustGridProps {
 interface ClientSector {
   name: string;
   icon: React.ReactNode;
-  clients: {
-    name: string;
-    subtext: string;
-    location: string;
-  }[];
+  description: string;
+  capabilities: string[];
 }
 
 export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
-  title = "Trusted by leading Philippine process facilities",
-  subtitle = "Power plants, refineries, pharmaceutical labs, and manufacturing facilities across Luzon, Visayas, and Mindanao rely on Beamex calibration technology and Accuro support.",
+  title = "Trusted by leading Philippine industries",
+  subtitle = "Industrial plants and manufacturing facilities across the country trust Beamex calibration technology and Accuro's high-quality services.",
   showMetrics = true,
   className = "",
 }) => {
@@ -28,36 +25,41 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
     {
       name: "Power generation & utilities",
       icon: <Zap className="w-5 h-5 text-amber-500" />,
-      clients: [
-        { name: "First Gen Corporation", subtext: "Clean energy & natural gas plants", location: "Batangas / Bicol" },
-        { name: "Energy Development Corp (EDC)", subtext: "Geothermal & renewable energy", location: "Leyte / Negros" },
-        { name: "Aboitiz Power", subtext: "Thermal & hydroelectric facilities", location: "Luzon / Mindanao" },
-        { name: "San Miguel Global Power", subtext: "Combined cycle & power assets", location: "Nationwide" },
+      description: "Clean energy, natural gas, geothermal, thermal, and hydroelectric facilities across the country.",
+      capabilities: [
+        "Turbine & boiler calibration",
+        "Substation & high-voltage testing",
+        "Automated compliance records",
       ],
     },
     {
       name: "Petrochemical & refining",
       icon: <Flame className="w-5 h-5 text-orange-500" />,
-      clients: [
-        { name: "Petron Corporation", subtext: "Bataan refinery & distribution terminals", location: "Limay, Bataan" },
-        { name: "Shell Pilipinas", subtext: "Import terminals & energy depots", location: "Batangas / CDO" },
+      description: "Petroleum refineries, energy depots, distribution terminals, and continuous processing plants.",
+      capabilities: [
+        "ATEX/IECEx hazardous areas",
+        "Custody transfer accuracy",
+        "Safety valve & transmitter verification",
       ],
     },
     {
       name: "Food, beverage & brewing",
       icon: <Utensils className="w-5 h-5 text-emerald-500" />,
-      clients: [
-        { name: "San Miguel Brewery", subtext: "Commercial breweries & bottling", location: "Luzon / Visayas" },
-        { name: "Universal Robina Corp (URC)", subtext: "Food processing & milling", location: "Laguna / Cebu" },
-        { name: "Nestlé Philippines", subtext: "Nutrition & dairy processing facilities", location: "Bulacan / Cagayan de Oro" },
+      description: "Commercial breweries, food processing, dairy facilities, and high-throughput milling operations.",
+      capabilities: [
+        "Sanitary sensor calibration",
+        "Hygienic batch consistency",
+        "FDA & GMP traceability",
       ],
     },
     {
       name: "Water & municipal utilities",
       icon: <Droplets className="w-5 h-5 text-blue-500" />,
-      clients: [
-        { name: "Maynilad Water Services", subtext: "Water treatment plants & distribution", location: "West Zone NCR" },
-        { name: "Manila Water Company", subtext: "East zone water infrastructure", location: "East Zone NCR" },
+      description: "Water treatment plants, municipal pumping stations, and large-scale utility infrastructure.",
+      capabilities: [
+        "Flowmeter & pressure checks",
+        "Water quality instrumentation",
+        "Distributed telemetry calibration",
       ],
     },
   ];
@@ -79,7 +81,7 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
           </p>
         </div>
 
-        {/* Sectors & Clients Grid */}
+        {/* Sectors & Capabilities Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {sectors.map((sector, idx) => (
             <div
@@ -96,21 +98,15 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
                   </h3>
                 </div>
 
-                <div className="space-y-3.5">
-                  {sector.clients.map((client, cIdx) => (
-                    <div key={cIdx} className="group">
-                      <div className="flex items-start justify-between">
-                        <span className="text-sm font-semibold text-gray-900 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                          {client.name}
-                        </span>
-                      </div>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                        {client.subtext}
-                      </p>
-                      <div className="flex items-center gap-1 text-[11px] text-gray-400 dark:text-gray-500 mt-1">
-                        <Building2 className="w-3 h-3" />
-                        <span>{client.location}</span>
-                      </div>
+                <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                  {sector.description}
+                </p>
+
+                <div className="space-y-2">
+                  {sector.capabilities.map((item, cIdx) => (
+                    <div key={cIdx} className="flex items-center gap-2 text-xs text-gray-700 dark:text-gray-300">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                      <span>{item}</span>
                     </div>
                   ))}
                 </div>

@@ -62,7 +62,7 @@ export function Home() {
                 <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Who we are</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                Accuro is the exclusive distributor and authorized partner of Beamex in the Philippines, providing high-quality instrumentation and calibration solutions for industrial applications. We specialize in the complete Beamex ecosystem—from portable field calibrators to standardized CENTRiCAL workshop benches and digital calibration management software.
+                Accuro is the exclusive distributor of Beamex in the Philippines, providing high-quality instrumentation and calibration solutions for industrial applications. We specialize in the complete Beamex ecosystem—from portable field calibrators to standardized CENTRiCAL workshop benches and digital calibration management software.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 With deep local industry expertise backed by Beamex's 50+ years of Nordic calibration excellence, we help our clients optimize their processes, eliminate transcription errors, improve operational efficiency, and maintain strict compliance with ISO/IEC 17025 and global audit standards.
@@ -74,22 +74,29 @@ export function Home() {
                 </Link>
               </Button>
             </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg blur opacity-20" />
-              <Card className="relative overflow-hidden border-2 shadow-xl">
-                <CardContent className="p-0 relative">
+            <div className="relative flex items-center justify-center">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl blur opacity-15" />
+              <div className="relative w-full max-w-md bg-white dark:bg-gray-900 rounded-2xl border-2 border-emerald-500/40 dark:border-emerald-500/30 p-8 shadow-xl flex flex-col items-center text-center space-y-6">
+                <div className="p-6 bg-slate-50 dark:bg-gray-800/80 rounded-2xl border border-emerald-500/30 shadow-inner flex items-center justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    alt="Industrial calibration facility"
-                    className="w-full h-auto rounded-lg"
+                    src="/images/beamex-expert-partner-accuro.png"
+                    alt="Beamex Expert Partner - Accuro"
+                    className="h-28 sm:h-36 w-auto object-contain"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent" />
-                  {/* Floating Trust Badge overlay */}
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <BeamexPartnerBadge variant="card" />
+                </div>
+                <div className="space-y-2">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-bold tracking-wide">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    <span>Exclusive partner</span>
                   </div>
-                </CardContent>
-              </Card>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
+                    Accuro is the exclusive distributor of Beamex in the Philippines
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Direct factory representation, authentic warranties, and certified local calibration support.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

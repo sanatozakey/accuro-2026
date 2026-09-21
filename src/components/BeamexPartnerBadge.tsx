@@ -70,12 +70,12 @@ export const BeamexPartnerBadge: React.FC<BeamexPartnerBadgeProps> = ({
         <div className="border-l border-gray-200 dark:border-gray-700 pl-3">
           <div className="flex items-center gap-1.5">
             <span className="text-xs font-bold text-emerald-700 dark:text-emerald-400 tracking-wide">
-              Sole authorized partner
+              Exclusive partner
             </span>
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
           </div>
           <p className="text-xs font-bold text-gray-900 dark:text-gray-100">
-            Accuro is the only distributor of Beamex in the Philippines
+            Accuro is the exclusive distributor of Beamex in the Philippines
           </p>
         </div>
       </div>

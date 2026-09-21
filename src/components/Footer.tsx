@@ -64,13 +64,13 @@ export function Footer() {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1" />
                 <span className="text-gray-300">
-                  Unit 2229, Viera Residences, Scout Tuason Avenue, Barangay
-                  Obrero, Quezon City
+                  Room 305 Annex Verde Oro Bldg., 535 Commonwealth Ave.,
+                  Quezon City, Metro Manila, 1119 Philippines
                 </span>
               </li>
             </ul>
             <div className="mt-6 pt-6 border-t border-gray-700">
-              <h4 className="text-sm font-semibold mb-3 text-white">Authorized partner</h4>
+              <h4 className="text-sm font-semibold mb-3 text-white">Exclusive partner</h4>
               <a
                 href="https://www.beamex.com/"
                 target="_blank"
