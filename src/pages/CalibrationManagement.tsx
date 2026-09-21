@@ -88,10 +88,10 @@ const CalibrationManagement: React.FC = () => {
             <Sparkles className="w-4 h-4 text-blue-400" />
             <span>Digital calibration ecosystem</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-tight drop-shadow-lg">
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-6 tracking-tight drop-shadow-lg">
             Calibration management software
           </h1>
-          <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
+          <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
             Streamline your asset lifecycle, eliminate paperwork, and automate calibration execution with Beamex LOGiCAL (Cloud) and Beamex CMX (Enterprise).
           </p>
         </div>
@@ -101,7 +101,7 @@ const CalibrationManagement: React.FC = () => {
       <section className="py-12 md:py-16 bg-blue-50/50 dark:bg-gray-900/50 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-3">
               Why digitize with Beamex software?
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">

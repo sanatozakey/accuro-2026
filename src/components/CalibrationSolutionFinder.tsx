@@ -227,7 +227,7 @@ export const CalibrationSolutionFinder: React.FC<{ className?: string }> = ({ cl
             <Compass className="w-4 h-4 text-blue-600" />
             Interactive tool • 30 seconds
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-gray-900 dark:text-gray-100 mb-4">
             Find your ideal Beamex calibration solution
           </h2>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">

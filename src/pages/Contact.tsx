@@ -228,10 +228,10 @@ export function Contact() {
       <section className="bg-navy-900 dark:bg-gray-900 text-white py-16 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-6 drop-shadow-lg">
             Get in touch with us
           </h1>
-          <p className="text-base xs:text-lg sm:text-xl text-gray-200 max-w-3xl">
+          <p className="text-base md:text-lg lg:text-xl text-gray-200 max-w-3xl leading-relaxed">
             Do you have questions about our products or services? Contact us today and
             our team will be happy to assist you.
           </p>
@@ -243,7 +243,7 @@ export function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">Send us a message</h2>
+              <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-6 text-gray-900 dark:text-gray-100">Send us a message</h2>
 
               {success && (
                 <Alert className="mb-6 bg-green-50 border-green-200">
@@ -520,7 +520,7 @@ export function Contact() {
             </div>
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">Contact information</h2>
+              <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-6 text-gray-900 dark:text-gray-100">Contact information</h2>
               <Card className="border-2 shadow-lg mb-8 dark:bg-gray-900 dark:border-gray-700">
                 <CardContent className="p-6 sm:p-8">
                   <div className="space-y-8">

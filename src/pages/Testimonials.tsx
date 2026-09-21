@@ -122,7 +122,7 @@ export function Testimonials() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Award className="h-12 w-12 sm:h-16 sm:w-16 text-blue-400 mx-auto mb-4" />
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Customer Testimonials</h1>
+            <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-4 drop-shadow-lg">Customer testimonials</h1>
             <p className="text-lg sm:text-xl text-gray-300">
               See what our satisfied clients have to say about our calibration services
             </p>
@@ -431,8 +431,8 @@ export function Testimonials() {
       {!loading && reviews.length > 0 && (
         <section className="py-8 sm:py-12 bg-blue-900 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Ready to Experience Excellence?
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
+              Ready to experience excellence?
             </h2>
             <p className="text-lg sm:text-xl text-blue-200 mb-6">
               Join our satisfied customers and book your calibration service today
@@ -441,7 +441,7 @@ export function Testimonials() {
               href="/booking"
               className="inline-block w-full sm:w-auto bg-white text-blue-900 font-medium py-3 px-8 rounded-md hover:bg-gray-100 transition"
             >
-              Book Now
+              Book now
             </a>
           </div>
         </section>

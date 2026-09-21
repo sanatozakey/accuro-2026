@@ -73,7 +73,7 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
             <ShieldCheck className="w-3.5 h-3.5" />
             Proven Philippine track record
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-gray-900 dark:text-gray-100 mb-4">
             {title}
           </h2>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">

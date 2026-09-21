@@ -101,7 +101,7 @@ export const TrustSignals: React.FC = () => {
             <ShieldCheck className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             <span>Industrial proof & compliance</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold tracking-tight text-foreground">
             Accredited quality & industry certifications
           </h2>
           <p className="text-muted-foreground text-sm sm:text-base mt-2">
@@ -173,7 +173,7 @@ export const TrustSignals: React.FC = () => {
               <Award className="w-4 h-4" />
               <span>Proven results</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground">
               Industrial case studies & ROI
             </h2>
           </div>
@@ -230,7 +230,7 @@ export const TrustSignals: React.FC = () => {
                     <MapPin className="w-3.5 h-3.5 text-blue-400" />
                     <span>Nationwide technical reach</span>
                   </div>
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight mb-3">
+                  <h2 className="text-h2-mobile md:text-h2-desktop font-bold tracking-tight mb-3">
                     Philippine service coverage & rapid field support
                   </h2>
                   <p className="text-gray-300 text-sm sm:text-base leading-relaxed">

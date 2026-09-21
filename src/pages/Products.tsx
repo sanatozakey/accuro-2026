@@ -34,7 +34,7 @@ export function Products() {
       <section className="bg-navy-900 dark:bg-gray-900 text-white py-12 sm:py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-3">Beamex products</h1>
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-3 drop-shadow-lg">Beamex products</h1>
           <p className="text-sm xs:text-base sm:text-lg max-w-2xl text-gray-200">
             Complete range of calibration solutions for all your calibration needs.
           </p>
@@ -191,7 +191,7 @@ export function Products() {
       {/* Call to Action */}
       <section className="bg-blue-600 dark:bg-blue-700 text-white py-12 sm:py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Need help choosing?</h2>
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">Need help choosing?</h2>
           <p className="text-base sm:text-lg mb-6 max-w-xl mx-auto text-blue-50">
             Our calibration experts are here to help you select the perfect solution.
           </p>
@@ -202,7 +202,7 @@ export function Products() {
               size="lg"
               className="bg-white text-blue-600 hover:bg-gray-100"
             >
-              <a href="/contact">Contact Us</a>
+              <a href="/contact">Contact us</a>
             </Button>
           </div>
         </div>

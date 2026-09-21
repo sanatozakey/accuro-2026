@@ -122,7 +122,7 @@ export function Booking() {
       {/* Booking Header */}
       <section className="bg-navy-900 text-white py-12 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Schedule a Meeting</h1>
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold drop-shadow-lg">Schedule a meeting</h1>
           <p className="mt-4 max-w-3xl text-base sm:text-lg">
             Book a consultation with our team to discuss your calibration and
             instrumentation needs
@@ -138,7 +138,7 @@ export function Booking() {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-lg shadow-md border border-gray-200 p-4 sm:p-6">
                 <div className="flex items-center justify-between mb-4 sm:mb-6">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Meeting Request Form</h2>
+                  <h2 className="text-h2-mobile md:text-h2-desktop font-bold">Meeting request form</h2>
                 </div>
                 {bookingSubmitted && (
                   <div className="bg-green-50 border border-green-200 rounded-md p-4 mb-6">

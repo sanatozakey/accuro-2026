@@ -92,7 +92,7 @@ const WorkshopCalibration: React.FC = () => {
             <Sparkles className="w-4 h-4 text-blue-400" />
             <span>Standardized yet configurable</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg tracking-tight">
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-6 drop-shadow-lg tracking-tight">
             Beamex CENTRiCAL workshop calibration
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
@@ -105,7 +105,7 @@ const WorkshopCalibration: React.FC = () => {
       <section className="py-12 md:py-16 bg-blue-50/50 dark:bg-gray-900/50 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-3">
               Why choose Beamex CENTRiCAL?
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">
@@ -147,7 +147,7 @@ const WorkshopCalibration: React.FC = () => {
               <ShieldCheck className="w-5 h-5" />
               <span>Decades of proven expertise</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground">
               A central station for all your workshop calibrations
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
@@ -186,7 +186,7 @@ const WorkshopCalibration: React.FC = () => {
       <section className="py-12 md:py-16 bg-muted/30 border-t border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-3">
               Available CENTRiCAL configurations
             </h2>
             <p className="text-muted-foreground text-base">
@@ -249,7 +249,7 @@ const WorkshopCalibration: React.FC = () => {
       {/* Digital Workflow Section */}
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-4">
             Benefit from a fully digital workflow
           </h2>
           <p className="text-muted-foreground text-base max-w-2xl mx-auto">

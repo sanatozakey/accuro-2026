@@ -143,7 +143,7 @@ const BeamexServices: React.FC = () => {
             <Sparkles className="w-4 h-4 text-blue-400" />
             <span>Dedicated metrology & support engineers</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg tracking-tight">
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold mb-6 drop-shadow-lg tracking-tight">
             Expert services, training & support
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
@@ -156,7 +156,7 @@ const BeamexServices: React.FC = () => {
       <section className="py-12 md:py-16 bg-blue-50/50 dark:bg-gray-900/50 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-3">
               Comprehensive service value
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">
@@ -195,7 +195,7 @@ const BeamexServices: React.FC = () => {
             <Users className="w-5 h-5" />
             <span>People-powered support</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-4">
             Calibration solution services
           </h2>
           <p className="text-muted-foreground text-base leading-relaxed">
@@ -267,7 +267,7 @@ const BeamexServices: React.FC = () => {
       <section className="py-12 md:py-16 bg-muted/30 border-t border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-4">
               Equipment recalibration & protection plans
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">

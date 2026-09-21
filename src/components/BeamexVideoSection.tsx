@@ -83,7 +83,7 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
             <Film className="w-4 h-4 text-blue-600" />
             Official Beamex media demonstrations
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-gray-900 dark:text-gray-100 mb-4">
             See Beamex calibration technology in action
           </h2>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">

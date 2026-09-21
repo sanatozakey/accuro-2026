@@ -14,8 +14,8 @@ export function About() {
       <section className="bg-navy-900 text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-blue-900 opacity-90" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">About us</h1>
-          <p className="mt-4 max-w-3xl text-lg sm:text-xl text-gray-200">
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold tracking-tight mb-6 drop-shadow-lg">About us</h1>
+          <p className="mt-4 max-w-3xl text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed">
             Accuro is the exclusive partner and distributor of Beamex in the Philippines, delivering world-class instrumentation, calibration solutions, and metrology services.
           </p>
         </div>
@@ -48,7 +48,7 @@ export function About() {
                     Official exclusive representation
                   </div>
 
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                  <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-slate-900 dark:text-white tracking-tight leading-tight">
                     Accuro is the exclusive distributor of Beamex in the Philippines
                   </h2>
 
@@ -117,7 +117,7 @@ export function About() {
       <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
               What drives us?
             </h2>
           </div>
@@ -183,7 +183,7 @@ export function About() {
             <div className="space-y-6">
               <div>
                 <BeamexPartnerBadge variant="eyebrow" className="mb-4" />
-                <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our company</h2>
+                <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">Our company</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Accuro is founded with a vision to deliver excellence in the field of calibration. As the exclusive distributor of Beamex in the Philippines, we bring over 50 years of Nordic metrology innovation directly to local industrial operations.
@@ -221,7 +221,7 @@ export function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why we work at Accuro?</h2>
+              <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-6">Why we work at Accuro?</h2>
             </div>
             <Card className="border-2 dark:bg-gray-800 dark:border-gray-700">
               <CardContent className="p-8 space-y-6">
@@ -265,7 +265,7 @@ export function About() {
       <section className="py-16 sm:py-24 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Who we serve?</h2>
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">Who we serve?</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Providing calibration solutions across diverse industries with precision and reliability.
             </p>

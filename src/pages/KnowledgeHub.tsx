@@ -196,7 +196,7 @@ export const KnowledgeHub: React.FC = () => {
             <Sparkles className="w-4 h-4 text-blue-400" />
             <span>Industrial calibration knowledge center</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+          <h1 className="text-h1-mobile md:text-h1-desktop font-bold tracking-tight mb-6 drop-shadow-lg">
             Educational guides & technical insights
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-200 leading-relaxed">
@@ -268,7 +268,7 @@ export const KnowledgeHub: React.FC = () => {
                     • {activeGuide.readTime}
                   </span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-foreground mb-4">
+                <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-foreground mb-4">
                   {activeGuide.title}
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">

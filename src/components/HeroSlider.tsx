@@ -129,7 +129,7 @@ export const HeroSlider: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -16 }}
                 transition={{ duration: 0.4 }}
-                className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12] drop-shadow-md"
+                className="text-h1-mobile md:text-h1-desktop font-bold text-white tracking-tight leading-[1.15] drop-shadow-md"
               >
                 {slide.title}
               </motion.h1>

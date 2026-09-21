@@ -59,7 +59,7 @@ export function Home() {
               {/* Official Partner Badge */}
               <div>
                 <BeamexPartnerBadge variant="eyebrow" className="mb-4" />
-                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Who we are</h2>
+                <h2 className="text-h2-mobile md:text-h2-desktop font-bold tracking-tight mb-4">Who we are</h2>
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Accuro is the exclusive distributor of Beamex in the Philippines, providing high-quality instrumentation and calibration solutions for industrial applications. We specialize in the complete Beamex ecosystem—from portable field calibrators to standardized CENTRiCAL workshop benches and digital calibration management software.
@@ -109,7 +109,7 @@ export function Home() {
       <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">
               Backed by industry leaders
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -187,7 +187,7 @@ export function Home() {
       <section className="py-16 sm:py-24 dark:bg-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold">Our products & solutions</h2>
+            <h2 className="text-h2-mobile md:text-h2-desktop font-bold">Our products & solutions</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               We offer the complete ecosystem of Beamex calibration equipment, software, and accessories for process industries.
             </p>
