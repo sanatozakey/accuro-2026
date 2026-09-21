@@ -43,9 +43,9 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
       ],
     },
     {
-      name: "Food, beverage & brewing",
+      name: "Food & beverage",
       icon: <Utensils className="w-5 h-5 text-emerald-500" />,
-      description: "Commercial breweries, food processing, dairy facilities, and high-throughput milling operations.",
+      description: "Food processing, beverage production, dairy facilities, and high-throughput milling operations.",
       capabilities: [
         "Sanitary sensor calibration",
         "Hygienic batch consistency",
