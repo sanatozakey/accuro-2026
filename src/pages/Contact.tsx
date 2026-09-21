@@ -71,23 +71,23 @@ export function Contact() {
       } else if (solutionParam) {
         const lower = solutionParam.toLowerCase()
         if (lower.includes('field') || lower.includes('mc6')) {
-          next.productInterest = 'Field Calibrators'
+          next.productInterest = 'Field calibrators'
         } else if (lower.includes('workshop') || lower.includes('centrical')) {
-          next.productInterest = 'Workshop Calibrators'
+          next.productInterest = 'Workshop calibrators'
         } else if (lower.includes('software') || lower.includes('management') || lower.includes('cmx') || lower.includes('logical')) {
-          next.productInterest = 'Calibration Software'
+          next.productInterest = 'Calibration software'
         } else if (lower.includes('service')) {
           next.productInterest = 'Accessories'
         }
       }
 
       if (modelParam) {
-        next.subject = `Official Quotation Request: ${modelParam}`
+        next.subject = `Official quotation request: ${modelParam}`
         if (!next.message) {
           next.message = `Hello Accuro Technical Team,\n\nWe would like to request an official quotation, technical specifications, and delivery lead time for ${modelParam}.\n\nPlease include applicable ISO 17025 calibration certification options.`
         }
       } else if (typeParam === 'quote' && !next.subject) {
-        next.subject = 'Official Beamex Quotation Request'
+        next.subject = 'Official Beamex quotation request'
       }
 
       if (industryParam) {
@@ -274,10 +274,10 @@ export function Contact() {
                       <div>
                         <div className="flex items-center gap-1.5">
                           <h4 className="text-sm font-bold text-blue-900 dark:text-blue-200">
-                            Official Beamex Quotation Guarantee
+                            Official Beamex quotation guarantee
                           </h4>
-                          <span className="text-[10px] uppercase font-bold bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200 px-1.5 py-0.2 rounded">
-                            24h Turnaround
+                          <span className="text-[10px] font-bold bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200 px-1.5 py-0.2 rounded">
+                            24h turnaround
                           </span>
                         </div>
                         <p className="text-xs text-blue-700 dark:text-blue-300 mt-1">
@@ -364,7 +364,7 @@ export function Contact() {
                     </div>
                     <div>
                       <Label htmlFor="company">
-                        Company / Facility Name
+                        Company / facility name
                       </Label>
                       <Input
                         type="text"
@@ -409,10 +409,10 @@ export function Contact() {
                           className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                         >
                           <option value="">Select product category...</option>
-                          {productCategories.filter(cat => cat !== 'All Products').map((category) => (
+                          {productCategories.filter(cat => cat !== 'All products').map((category) => (
                             <option key={category} value={category}>{category}</option>
                           ))}
-                          <option value="Beamex Services & Training">Beamex Services & Training</option>
+                          <option value="Beamex Services & Training">Beamex services & training</option>
                           <option value="others">Others</option>
                         </select>
                       </div>
@@ -422,7 +422,7 @@ export function Contact() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <Label htmlFor="industry">
-                          Industry Sector
+                          Industry sector
                         </Label>
                         <select
                           id="industry"
@@ -432,19 +432,19 @@ export function Contact() {
                           className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                         >
                           <option value="">Select your industry sector...</option>
-                          <option value="Power Generation & Utilities">Power Generation & Utilities</option>
-                          <option value="Oil & Gas / Petrochemical">Oil & Gas / Petrochemical</option>
-                          <option value="Pharmaceutical & Life Sciences (21 CFR Part 11)">Pharmaceutical & Life Sciences (21 CFR Part 11)</option>
-                          <option value="Food & Beverage Processing">Food & Beverage Processing</option>
-                          <option value="Chemical Manufacturing">Chemical Manufacturing</option>
-                          <option value="Calibration & Metrology Lab (ISO/IEC 17025)">Calibration & Metrology Lab (ISO/IEC 17025)</option>
-                          <option value="Water & Environmental Utilities">Water & Environmental Utilities</option>
-                          <option value="Other Industry">Other Industry</option>
+                          <option value="Power Generation & Utilities">Power generation & utilities</option>
+                          <option value="Oil & Gas / Petrochemical">Oil & gas / petrochemical</option>
+                          <option value="Pharmaceutical & Life Sciences (21 CFR Part 11)">Pharmaceutical & life sciences (21 CFR Part 11)</option>
+                          <option value="Food & Beverage Processing">Food & beverage processing</option>
+                          <option value="Chemical Manufacturing">Chemical manufacturing</option>
+                          <option value="Calibration & Metrology Lab (ISO/IEC 17025)">Calibration & metrology lab (ISO/IEC 17025)</option>
+                          <option value="Water & Environmental Utilities">Water & environmental utilities</option>
+                          <option value="Other Industry">Other industry</option>
                         </select>
                       </div>
                       <div>
                         <Label htmlFor="timeline">
-                          Expected Timeline / Urgency
+                          Expected timeline / urgency
                         </Label>
                         <select
                           id="timeline"
@@ -457,7 +457,7 @@ export function Contact() {
                           <option value="Immediate (< 1 month)">Immediate (&lt; 1 month)</option>
                           <option value="1 to 3 months">1 to 3 months</option>
                           <option value="3 to 6 months">3 to 6 months</option>
-                          <option value="Budgeting for Next Fiscal Year">Budgeting for Next Fiscal Year</option>
+                          <option value="Budgeting for Next Fiscal Year">Budgeting for next fiscal year</option>
                         </select>
                       </div>
                     </div>
@@ -505,8 +505,8 @@ export function Contact() {
                         {loading
                           ? 'Processing...'
                           : formData.inquiryType === 'quote'
-                          ? 'Request Official Quotation'
-                          : 'Send Message'}
+                          ? 'Request official quotation'
+                          : 'Send message'}
                         {formData.inquiryType === 'quote' ? (
                           <FileText size={18} className="ml-2" />
                         ) : (

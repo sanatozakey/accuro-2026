@@ -299,10 +299,10 @@ export function Home() {
 
       {/* Conversion Contact CTA */}
       <ContactCTA
-        title="Need an Official Quotation or Technical Demonstration?"
+        title="Need an official quotation or technical demonstration?"
         description="Connect directly with Accuro's certified Beamex application engineers in the Philippines. We provide itemized quotes, compliance advisories, and on-site demonstrations."
         inquiryType="quote"
-        buttonText="Request Official Beamex Quote"
+        buttonText="Request official Beamex quote"
       />
     </div>
   );

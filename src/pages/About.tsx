@@ -37,19 +37,19 @@ export function About() {
                     />
                   </div>
                   <span className="mt-3 text-xs font-semibold text-gray-500 dark:text-gray-400">
-                    Official Beamex Shield
+                    Official Beamex shield
                   </span>
                 </div>
 
                 {/* Text Content */}
                 <div className="flex-1 text-center lg:text-left space-y-4">
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-emerald-300 dark:border-emerald-800">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 text-xs sm:text-sm font-bold tracking-wide border border-emerald-300 dark:border-emerald-800">
                     <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                    Official Exclusive Representation
+                    Official exclusive representation
                   </div>
 
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
-                    Accuro is the ONLY Distributor of Beamex in the Philippines
+                    Accuro is the only distributor of Beamex in the Philippines
                   </h2>
 
                   <p className="text-base sm:text-lg text-slate-700 dark:text-gray-300 leading-relaxed">
@@ -61,7 +61,7 @@ export function About() {
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-gray-900/60 border border-slate-200 dark:border-gray-700 text-slate-800 dark:text-gray-200">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="font-semibold block text-slate-900 dark:text-white">100% Genuine Nordic Hardware</strong>
+                        <strong className="font-semibold block text-slate-900 dark:text-white">100% genuine Nordic hardware</strong>
                         <span className="text-xs text-slate-600 dark:text-gray-400">Directly from Pietarsaari, Finland with authentic factory coverage.</span>
                       </div>
                     </div>
@@ -69,7 +69,7 @@ export function About() {
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-gray-900/60 border border-slate-200 dark:border-gray-700 text-slate-800 dark:text-gray-200">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="font-semibold block text-slate-900 dark:text-white">Sole Philippine Rights</strong>
+                        <strong className="font-semibold block text-slate-900 dark:text-white">Sole Philippine rights</strong>
                         <span className="text-xs text-slate-600 dark:text-gray-400">Exclusive sales, software licensing, and authorized servicing.</span>
                       </div>
                     </div>
@@ -77,7 +77,7 @@ export function About() {
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-gray-900/60 border border-slate-200 dark:border-gray-700 text-slate-800 dark:text-gray-200">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="font-semibold block text-slate-900 dark:text-white">ISO/IEC 17025 Recalibration</strong>
+                        <strong className="font-semibold block text-slate-900 dark:text-white">ISO/IEC 17025 recalibration</strong>
                         <span className="text-xs text-slate-600 dark:text-gray-400">Local accredited calibration lab for periodic recertification.</span>
                       </div>
                     </div>
@@ -85,7 +85,7 @@ export function About() {
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-gray-900/60 border border-slate-200 dark:border-gray-700 text-slate-800 dark:text-gray-200">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="font-semibold block text-slate-900 dark:text-white">Certified Filipino Metrologists</strong>
+                        <strong className="font-semibold block text-slate-900 dark:text-white">Certified Filipino metrologists</strong>
                         <span className="text-xs text-slate-600 dark:text-gray-400">Nordic-trained engineers for on-site commissioning & audits.</span>
                       </div>
                     </div>
@@ -95,7 +95,7 @@ export function About() {
                   <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
                     <Button asChild size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-7 shadow-md">
                       <Link to="/contact?type=quote">
-                        Request Official Pricing
+                        Request official pricing
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Link>
                     </Button>
@@ -200,7 +200,7 @@ export function About() {
                 <CardContent className="p-0">
                   <img
                     src="/images/Beamex MC6.png"
-                    alt="Beamex MC6 Calibrator"
+                    alt="Beamex MC6 calibrator"
                     className="w-full h-full object-contain bg-gray-50 p-4"
                   />
                 </CardContent>
@@ -218,7 +218,7 @@ export function About() {
                 <CardContent className="p-0">
                   <img
                     src="/images/Beamex Temperature Sensors.png"
-                    alt="Beamex Temperature Sensors"
+                    alt="Beamex temperature sensors"
                     className="w-full h-full object-contain bg-gray-50 p-4"
                   />
                 </CardContent>
@@ -227,7 +227,7 @@ export function About() {
                 <CardContent className="p-0">
                   <img
                     src="/images/Calibration Pumps.png"
-                    alt="Calibration Pumps"
+                    alt="Calibration pumps"
                     className="w-full h-full object-contain bg-gray-50 p-4"
                   />
                 </CardContent>
@@ -297,7 +297,7 @@ export function About() {
                 <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
                     src="/images/Oil & Gas.png"
-                    alt="Oil & Gas"
+                    alt="Oil & gas"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -305,7 +305,7 @@ export function About() {
               <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 mb-3 min-h-[36px]">
                   <Building2 className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <CardTitle className="text-xl">Oil & Gas</CardTitle>
+                  <CardTitle className="text-xl">Oil & gas</CardTitle>
                 </div>
                 <CardDescription className="text-base text-gray-700 flex-grow">
                   We provide reliable calibration solutions for the oil and gas
@@ -320,7 +320,7 @@ export function About() {
                 <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
                     src="/images/Power Generation.png"
-                    alt="Power Generation"
+                    alt="Power generation"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -328,7 +328,7 @@ export function About() {
               <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 mb-3 min-h-[36px]">
                   <TrendingUp className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <CardTitle className="text-xl">Power Generation</CardTitle>
+                  <CardTitle className="text-xl">Power generation</CardTitle>
                 </div>
                 <CardDescription className="text-base text-gray-700 flex-grow">
                   We serve power generation facilities with calibration equipment
@@ -343,7 +343,7 @@ export function About() {
                 <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
                     src="/images/Food & Beverage.png"
-                    alt="Food & Beverage"
+                    alt="Food & beverage"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -351,7 +351,7 @@ export function About() {
               <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 mb-3 min-h-[36px]">
                   <Award className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <CardTitle className="text-xl">Food & Beverage</CardTitle>
+                  <CardTitle className="text-xl">Food & beverage</CardTitle>
                 </div>
                 <CardDescription className="text-base text-gray-700 flex-grow">
                   Our calibration solutions support the food and beverage industry
@@ -366,7 +366,7 @@ export function About() {
                 <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
                     src="/images/Compliance-driven industries with skilled workforce.png"
-                    alt="Regulated & Compliance-Driven Industries"
+                    alt="Regulated & compliance-driven industries"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -374,7 +374,7 @@ export function About() {
               <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 mb-3 min-h-[36px]">
                   <Shield className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <CardTitle className="text-xl">Regulated Industries</CardTitle>
+                  <CardTitle className="text-xl">Regulated industries</CardTitle>
                 </div>
                 <CardDescription className="text-base text-gray-700 flex-grow">
                   Supporting compliance-driven industries requiring strict regulatory
@@ -391,10 +391,10 @@ export function About() {
 
       {/* Contact & Consultation CTA */}
       <ContactCTA
-        title="Partner with the Philippines' Exclusive Beamex Distributor"
+        title="Partner with the Philippines' exclusive Beamex distributor"
         description="Schedule an engineering consultation or request an on-site calibration audit with our certified Filipino metrologists."
         inquiryType="quote"
-        buttonText="Get in Touch with Our Team"
+        buttonText="Get in touch with our team"
       />
     </div>
   )

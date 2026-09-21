@@ -18,29 +18,29 @@ const FieldCalibration: React.FC = () => {
   // Value propositions placed on top
   const valuePropositions = [
     {
-      title: 'Multifunctional Calibration',
-      badge: 'All-in-One Handheld',
+      title: 'Multifunctional calibration',
+      badge: 'All-in-one handheld',
       icon: <Gauge className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Calibrate pressure, temperature, and electrical signals simultaneously in a single, rugged portable device.',
     },
     {
-      title: 'Intrinsically Safe Compliance',
-      badge: 'ATEX & IECEx Certified',
+      title: 'Intrinsically safe compliance',
+      badge: 'ATEX & IECEx certified',
       icon: <Flame className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'The MC6-Ex is certified for all hazardous areas (Zone 0, 1, and 2), providing ultimate safety in oil, gas, and chemical environments.',
     },
     {
-      title: '100% Digital Data Flow',
-      badge: 'Paperless Automation',
+      title: '100% digital data flow',
+      badge: 'Paperless automation',
       icon: <Zap className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Documenting calibrators seamlessly communicate with Beamex CMX & LOGiCAL software, eliminating pen-and-paper transcription mistakes.',
     },
     {
-      title: 'Fieldbus Communicator',
-      badge: 'Multi-Bus Built In',
+      title: 'Fieldbus communicator',
+      badge: 'Multi-bus built in',
       icon: <Cpu className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Built-in field communicator for HART, FOUNDATION Fieldbus H1, and Profibus PA smart instruments.',
@@ -49,8 +49,8 @@ const FieldCalibration: React.FC = () => {
 
   const mc6Products = [
     {
-      name: 'Beamex MC6 Advanced Field Calibrator',
-      badge: 'Flagship Documenting Calibrator',
+      name: 'Beamex MC6 advanced field calibrator',
+      badge: 'Flagship documenting calibrator',
       image: '/images/Beamex MC6.png',
       description:
         'A high-accuracy, versatile field calibrator and multi-bus communicator offering precision measurement and generation for pressure, temperature, and electrical signals.',
@@ -63,8 +63,8 @@ const FieldCalibration: React.FC = () => {
       link: 'https://www.beamex.com/calibrators/beamex-mc6/',
     },
     {
-      name: 'Beamex MC6-Ex Intrinsically Safe Calibrator',
-      badge: 'Certified Hazardous Zone 0/1/2',
+      name: 'Beamex MC6-Ex intrinsically safe calibrator',
+      badge: 'Certified hazardous zone 0/1/2',
       image: '/images/Beamex MC6-Ex.png',
       description:
         'The world’s most accurate intrinsically safe field calibrator and communicator. ATEX, IECEx, and North American certified for safe operation in explosive atmospheres.',
@@ -77,8 +77,8 @@ const FieldCalibration: React.FC = () => {
       link: 'https://www.beamex.com/calibrators/beamex-mc6-ex/',
     },
     {
-      name: 'Beamex MC6-T Temperature Calibrator',
-      badge: 'Temperature Block + Calibrator',
+      name: 'Beamex MC6-T temperature calibrator',
+      badge: 'Temperature block + calibrator',
       image: '/images/Beamex MC6-T.png',
       description:
         'Combines a state-of-the-art temperature dry block with built-in multifunction process calibrator and communicator technology for versatile on-site temperature calibrations.',
@@ -94,32 +94,32 @@ const FieldCalibration: React.FC = () => {
 
   const accessories = [
     {
-      name: 'Beamex ePG Electric Pressure Pump',
-      badge: 'Electric Pressure Generation',
+      name: 'Beamex ePG electric pressure pump',
+      badge: 'Electric pressure generation',
       image: '/images/Beamex ePG.png',
       description:
         'Portable, battery-operated electric pressure pump and controller for industrial pressure calibration from -0.85 to 20 bar (-12 to 300 psi).',
       link: 'https://www.beamex.com/calibrators/beamex-epg/',
     },
     {
-      name: 'Beamex PG Manual Calibration Pumps',
-      badge: 'Hydraulic & Pneumatic',
+      name: 'Beamex PG manual calibration pumps',
+      badge: 'Hydraulic & pneumatic',
       image: '/images/Calibration Pumps.png',
       description:
         'Robust hand pumps ranging from fine low-pressure pneumatic control up to 700 bar (10,000 psi) high-pressure hydraulic generation.',
       link: 'https://www.beamex.com/calibrators/beamex-pg-calibration-pumps/',
     },
     {
-      name: 'External Pressure Modules (EXT)',
-      badge: 'Modular Pressure Range',
+      name: 'External pressure modules (EXT)',
+      badge: 'Modular pressure range',
       image: '/images/Beamex External Pressure Modules.png',
       description:
         'Expand your measurement range from vacuum up to 1,000 bar using interchangeable smart external pressure modules.',
       link: 'https://www.beamex.com/calibrators/beamex-ext-modules/',
     },
     {
-      name: 'Smart Temperature Reference Sensors',
-      badge: 'Reference Probes',
+      name: 'Smart temperature reference sensors',
+      badge: 'Reference probes',
       image: '/images/Beamex Temperature Sensors.png',
       description:
         'High-stability Pt100 reference sensors (RPRT, IPRT, SIRT) with internal sensor memory for plug-and-play traceable calibration.',
@@ -170,10 +170,10 @@ const FieldCalibration: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-600/30 border border-blue-400/30 text-blue-200 text-xs sm:text-sm font-semibold mb-4">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            <span>Beamex MC6 Advanced Family</span>
+            <span>Beamex MC6 advanced family</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-tight drop-shadow-lg">
-            Field Calibration & Process Instrumentation
+            Field calibration & process instrumentation
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
             Versatile, accurate, and rugged. The Beamex MC6 family meets the diverse calibration demands of process industries worldwide—even in explosive hazardous zones.
@@ -186,7 +186,7 @@ const FieldCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-              Why Choose the Beamex MC6 Family?
+              Why choose the Beamex MC6 family?
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Engineered to replace multiple separate tools with one rugged, highly accurate documenting calibrator.
@@ -204,7 +204,7 @@ const FieldCalibration: React.FC = () => {
                     <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center">
                       {item.icon}
                     </div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
+                    <span className="text-[11px] font-bold tracking-wide px-2 py-0.5 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
                       {item.badge}
                     </span>
                   </div>
@@ -223,7 +223,7 @@ const FieldCalibration: React.FC = () => {
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-            Flagship Field Calibrators
+            Flagship field calibrators
           </h2>
           <p className="text-muted-foreground text-base">
             Select the calibrator tailored to your environment: general plant use, explosive atmospheres, or combined temperature calibration.
@@ -248,7 +248,7 @@ const FieldCalibration: React.FC = () => {
                 </div>
 
                 <div className="lg:col-span-7 space-y-4">
-                  <span className="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">
+                  <span className="inline-block text-xs font-bold tracking-wide px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">
                     {product.badge}
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
@@ -259,8 +259,8 @@ const FieldCalibration: React.FC = () => {
                   </p>
 
                   <div className="pt-2">
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-foreground mb-2">
-                      Key Capabilities:
+                    <h4 className="text-xs font-bold tracking-wide text-foreground mb-2">
+                      Key capabilities:
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {product.features.map((feat, fIdx) => (
@@ -275,7 +275,7 @@ const FieldCalibration: React.FC = () => {
                   <div className="pt-3">
                     <a href={product.link} target="_blank" rel="noopener noreferrer">
                       <Button className="bg-blue-600 hover:bg-blue-700 text-white gap-2">
-                        Explore {product.name} Specs <ArrowRight className="w-4 h-4" />
+                        Explore {product.name} specs <ArrowRight className="w-4 h-4" />
                       </Button>
                     </a>
                   </div>
@@ -291,7 +291,7 @@ const FieldCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-              Comprehensive Measurement & Generation Specs
+              Comprehensive measurement & generation specs
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Engineered with laboratory-grade metrological accuracy for all standard industrial instrumentation signals.
@@ -316,7 +316,7 @@ const FieldCalibration: React.FC = () => {
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-            Pumps, Modules & Temperature Accessories
+            Pumps, modules & temperature accessories
           </h2>
           <p className="text-muted-foreground text-base">
             Complete your field calibration toolkit with electric & manual pressure pumps, external modules, and precision reference probes.
@@ -337,7 +337,7 @@ const FieldCalibration: React.FC = () => {
                 />
               </div>
               <CardContent className="p-5 flex flex-col flex-grow">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-1">
+                <span className="text-[10px] font-bold tracking-wide text-blue-600 dark:text-blue-400 mb-1">
                   {acc.badge}
                 </span>
                 <h3 className="font-bold text-base text-foreground mb-2">
@@ -353,7 +353,7 @@ const FieldCalibration: React.FC = () => {
                   className="mt-auto"
                 >
                   <Button variant="outline" size="sm" className="w-full gap-1.5 text-xs font-semibold">
-                    View Specs <ArrowRight className="w-3.5 h-3.5" />
+                    View specs <ArrowRight className="w-3.5 h-3.5" />
                   </Button>
                 </a>
               </CardContent>
@@ -364,13 +364,13 @@ const FieldCalibration: React.FC = () => {
 
       {/* Contact CTA Section */}
       <ContactCTA
-        productCategory="Field Calibration"
+        productCategory="Field calibration"
         solution="field-calibration"
-        model="Beamex MC6 Multifunction Field Calibrator"
+        model="Beamex MC6 multifunction field calibrator"
         inquiryType="quote"
-        title="Upgrade Your Field Calibration Tools"
+        title="Upgrade your field calibration tools"
         description="Schedule a hands-on demonstration with Beamex MC6 field calibrators or consult our technical team to build the ideal kit for your plant."
-        buttonText="Request Official MC6 Quote"
+        buttonText="Request official MC6 quote"
       />
     </div>
   );

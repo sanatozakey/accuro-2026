@@ -40,7 +40,7 @@ export function Footer() {
               </li>
               <li>
                 <Link to="/knowledge-hub" className="text-gray-300 hover:text-white">
-                  Knowledge Hub
+                  Knowledge hub
                 </Link>
               </li>
               <li>
@@ -70,7 +70,7 @@ export function Footer() {
               </li>
             </ul>
             <div className="mt-6 pt-6 border-t border-gray-700">
-              <h4 className="text-sm font-semibold mb-3 text-white">Authorized Partner</h4>
+              <h4 className="text-sm font-semibold mb-3 text-white">Authorized partner</h4>
               <a
                 href="https://www.beamex.com/"
                 target="_blank"

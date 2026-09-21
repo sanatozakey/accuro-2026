@@ -80,17 +80,17 @@ const BeamexSolutions: React.FC = () => {
             {/* Field Calibration */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
               <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                <span className="text-xs font-bold tracking-wide text-blue-800 dark:text-blue-300">
                   Value on top
                 </span>
                 <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
-                  Zero Pen & Paper
+                  Zero pen & paper
                 </span>
               </div>
               <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
                 <img
                   src="/images/Field Calibrators.png"
-                  alt="Beamex Field Calibrators"
+                  alt="Beamex field calibrators"
                   className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -115,17 +115,17 @@ const BeamexSolutions: React.FC = () => {
             {/* Workshop Calibration */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
               <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                <span className="text-xs font-bold tracking-wide text-blue-800 dark:text-blue-300">
                   Value on top
                 </span>
                 <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
-                  Modular & Ergonomic
+                  Modular & ergonomic
                 </span>
               </div>
               <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
                 <img
                   src="/images/Workshop Calibration.jpg"
-                  alt="Beamex Workshop Calibration Bench"
+                  alt="Beamex workshop calibration bench"
                   className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -150,17 +150,17 @@ const BeamexSolutions: React.FC = () => {
             {/* Calibration Management */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
               <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                <span className="text-xs font-bold tracking-wide text-blue-800 dark:text-blue-300">
                   Value on top
                 </span>
                 <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
-                  100% Audit-Ready
+                  100% audit-ready
                 </span>
               </div>
               <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
                 <img
                   src="/images/Calibration Management.webp"
-                  alt="Beamex Calibration Management Software"
+                  alt="Beamex calibration management software"
                   className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -185,17 +185,17 @@ const BeamexSolutions: React.FC = () => {
             {/* Expert Services */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-600 flex flex-col h-full overflow-hidden">
               <div className="bg-blue-50 dark:bg-blue-950/60 px-4 py-2 border-b border-blue-100 dark:border-blue-900 flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300">
+                <span className="text-xs font-bold tracking-wide text-blue-800 dark:text-blue-300">
                   Value on top
                 </span>
                 <span className="text-xs font-medium text-blue-700 dark:text-blue-400">
-                  Certified Engineers
+                  Certified engineers
                 </span>
               </div>
               <div className="h-44 bg-gray-50 dark:bg-gray-900/60 p-4 flex items-center justify-center border-b border-gray-100 dark:border-gray-800">
                 <img
                   src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  alt="Beamex Expert Services and Training"
+                  alt="Beamex expert services and training"
                   className="max-h-full max-w-full object-cover rounded group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -329,12 +329,12 @@ const BeamexSolutions: React.FC = () => {
 
       {/* Contact CTA Section */}
       <ContactCTA
-        productCategory="Beamex Solutions"
+        productCategory="Beamex solutions"
         solution="beamex-solutions"
         inquiryType="quote"
-        title="Interested in the Complete Beamex Ecosystem?"
+        title="Interested in the complete Beamex ecosystem?"
         description="Schedule a technical consultation with Accuro's local Filipino calibration engineers to evaluate your instrumentation assets."
-        buttonText="Request Consultation & Quote"
+        buttonText="Request consultation & quote"
       />
     </div>
   );

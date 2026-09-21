@@ -19,45 +19,45 @@ interface ClientSector {
 }
 
 export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
-  title = "Trusted by Leading Philippine Process Facilities",
+  title = "Trusted by leading Philippine process facilities",
   subtitle = "Power plants, refineries, pharmaceutical labs, and manufacturing facilities across Luzon, Visayas, and Mindanao rely on Beamex calibration technology and Accuro support.",
   showMetrics = true,
   className = "",
 }) => {
   const sectors: ClientSector[] = [
     {
-      name: "Power Generation & Utilities",
+      name: "Power generation & utilities",
       icon: <Zap className="w-5 h-5 text-amber-500" />,
       clients: [
-        { name: "First Gen Corporation", subtext: "Clean Energy & Natural Gas Plants", location: "Batangas / Bicol" },
-        { name: "Energy Development Corp (EDC)", subtext: "Geothermal & Renewable Energy", location: "Leyte / Negros" },
-        { name: "Aboitiz Power", subtext: "Thermal & Hydroelectric Facilities", location: "Luzon / Mindanao" },
-        { name: "San Miguel Global Power", subtext: "Combined Cycle & Power Assets", location: "Nationwide" },
+        { name: "First Gen Corporation", subtext: "Clean energy & natural gas plants", location: "Batangas / Bicol" },
+        { name: "Energy Development Corp (EDC)", subtext: "Geothermal & renewable energy", location: "Leyte / Negros" },
+        { name: "Aboitiz Power", subtext: "Thermal & hydroelectric facilities", location: "Luzon / Mindanao" },
+        { name: "San Miguel Global Power", subtext: "Combined cycle & power assets", location: "Nationwide" },
       ],
     },
     {
-      name: "Petrochemical & Refining",
+      name: "Petrochemical & refining",
       icon: <Flame className="w-5 h-5 text-orange-500" />,
       clients: [
-        { name: "Petron Corporation", subtext: "Bataan Refinery & Distribution Terminals", location: "Limay, Bataan" },
-        { name: "Shell Pilipinas", subtext: "Import Terminals & Energy Depots", location: "Batangas / CDO" },
+        { name: "Petron Corporation", subtext: "Bataan refinery & distribution terminals", location: "Limay, Bataan" },
+        { name: "Shell Pilipinas", subtext: "Import terminals & energy depots", location: "Batangas / CDO" },
       ],
     },
     {
-      name: "Food, Beverage & Brewing",
+      name: "Food, beverage & brewing",
       icon: <Utensils className="w-5 h-5 text-emerald-500" />,
       clients: [
-        { name: "San Miguel Brewery", subtext: "Commercial Breweries & Bottling", location: "Luzon / Visayas" },
-        { name: "Universal Robina Corp (URC)", subtext: "Food Processing & Milling", location: "Laguna / Cebu" },
-        { name: "Nestlé Philippines", subtext: "Nutrition & Dairy Processing Facilities", location: "Bulacan / Cagayan de Oro" },
+        { name: "San Miguel Brewery", subtext: "Commercial breweries & bottling", location: "Luzon / Visayas" },
+        { name: "Universal Robina Corp (URC)", subtext: "Food processing & milling", location: "Laguna / Cebu" },
+        { name: "Nestlé Philippines", subtext: "Nutrition & dairy processing facilities", location: "Bulacan / Cagayan de Oro" },
       ],
     },
     {
-      name: "Water & Municipal Utilities",
+      name: "Water & municipal utilities",
       icon: <Droplets className="w-5 h-5 text-blue-500" />,
       clients: [
-        { name: "Maynilad Water Services", subtext: "Water Treatment Plants & Distribution", location: "West Zone NCR" },
-        { name: "Manila Water Company", subtext: "East Zone Water Infrastructure", location: "East Zone NCR" },
+        { name: "Maynilad Water Services", subtext: "Water treatment plants & distribution", location: "West Zone NCR" },
+        { name: "Manila Water Company", subtext: "East zone water infrastructure", location: "East Zone NCR" },
       ],
     },
   ];
@@ -67,9 +67,9 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100/80 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 text-xs font-bold uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100/80 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 text-xs font-bold tracking-wide mb-3">
             <ShieldCheck className="w-3.5 h-3.5" />
-            Proven Philippine Track Record
+            Proven Philippine track record
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             {title}
@@ -119,9 +119,9 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
               <div className="mt-5 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs text-blue-700 dark:text-blue-400 font-medium">
                 <span className="flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-blue-600" />
-                  Active Beamex User
+                  Active Beamex user
                 </span>
-                <span className="text-gray-400 dark:text-gray-500">ISO 17025 Ready</span>
+                <span className="text-gray-400 dark:text-gray-500">ISO 17025 ready</span>
               </div>
             </div>
           ))}
@@ -136,15 +136,15 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
                   500+
                 </div>
                 <div className="text-xs sm:text-sm text-gray-300 font-medium">
-                  Calibrators Deployed in PH
+                  Calibrators deployed in PH
                 </div>
               </div>
               <div className="border-r border-white/10 last:border-0 pr-4">
                 <div className="text-2xl sm:text-4xl font-extrabold text-blue-400 mb-1">
-                  50+ Years
+                  50+ years
                 </div>
                 <div className="text-xs sm:text-sm text-gray-300 font-medium">
-                  Beamex Nordic Heritage
+                  Beamex Nordic heritage
                 </div>
               </div>
               <div className="border-r border-white/10 last:border-0 pr-4">
@@ -152,7 +152,7 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
                   100%
                 </div>
                 <div className="text-xs sm:text-sm text-gray-300 font-medium">
-                  Paperless & Audit-Ready
+                  Paperless & audit-ready
                 </div>
               </div>
               <div>
@@ -160,7 +160,7 @@ export const ClientTrustGrid: React.FC<ClientTrustGridProps> = ({
                   24 hrs
                 </div>
                 <div className="text-xs sm:text-sm text-gray-300 font-medium">
-                  Official Quote Turnaround
+                  Official quote turnaround
                 </div>
               </div>
             </div>

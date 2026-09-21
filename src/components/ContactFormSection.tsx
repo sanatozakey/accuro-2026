@@ -160,7 +160,7 @@ export function ContactFormSection() {
     <section className="py-12 md:py-16 bg-navy-900 dark:bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold mb-4">Get in touch</h2>
           <p className="text-lg text-gray-200">
             Have questions or need a quote? Contact us and our team will be happy to assist you.
           </p>
@@ -189,7 +189,7 @@ export function ContactFormSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <Label htmlFor="firstName" className="text-gray-900 dark:text-gray-100 font-semibold">
-                    First Name *
+                    First name *
                   </Label>
                   <Input
                     type="text"
@@ -205,7 +205,7 @@ export function ContactFormSection() {
                 </div>
                 <div>
                   <Label htmlFor="lastName" className="text-gray-900 dark:text-gray-100 font-semibold">
-                    Last Name *
+                    Last name *
                   </Label>
                   <Input
                     type="text"
@@ -222,7 +222,7 @@ export function ContactFormSection() {
               </div>
               <div>
                 <Label htmlFor="email" className="text-gray-900 dark:text-gray-100 font-semibold">
-                  Email Address *
+                  Email address *
                 </Label>
                 <Input
                   type="email"
@@ -238,7 +238,7 @@ export function ContactFormSection() {
               </div>
               <div>
                 <Label htmlFor="phone" className="text-gray-900 dark:text-gray-100 font-semibold">
-                  Phone Number *
+                  Phone number *
                 </Label>
                 <Input
                   type="tel"
@@ -269,7 +269,7 @@ export function ContactFormSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <Label htmlFor="inquiryType" className="text-gray-900 dark:text-gray-100 font-semibold">
-                    Inquiry Type *
+                    Inquiry type *
                   </Label>
                   <select
                     id="inquiryType"
@@ -280,16 +280,16 @@ export function ContactFormSection() {
                     className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:placeholder:text-gray-400"
                   >
                     <option value="">Select inquiry type...</option>
-                    <option value="product">Product Inquiry</option>
-                    <option value="quote">Request Quote</option>
-                    <option value="technical">Technical Support</option>
+                    <option value="product">Product inquiry</option>
+                    <option value="quote">Request quote</option>
+                    <option value="technical">Technical support</option>
                     <option value="sales">Sales</option>
-                    <option value="general">General Inquiry</option>
+                    <option value="general">General inquiry</option>
                   </select>
                 </div>
                 <div>
                   <Label htmlFor="productInterest" className="text-gray-900 dark:text-gray-100 font-semibold">
-                    Product Category
+                    Product category
                   </Label>
                   <select
                     id="productInterest"
@@ -299,7 +299,7 @@ export function ContactFormSection() {
                     className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:placeholder:text-gray-400"
                   >
                     <option value="">Select product category...</option>
-                    {productCategories.filter(cat => cat !== 'All Products').map((category) => (
+                    {productCategories.filter(cat => cat !== 'All products').map((category) => (
                       <option key={category} value={category}>{category}</option>
                     ))}
                   </select>
@@ -344,12 +344,11 @@ export function ContactFormSection() {
 
               <div>
                 <Button type="submit" disabled={loading} size="lg" className="bg-white text-navy-900 hover:bg-gray-100 font-semibold">
-                  {loading ? 'Sending...' : 'Send Message'}
+                  {loading ? 'Sending...' : 'Send message'}
                   <Send size={18} className="ml-2" />
                 </Button>
               </div>
             </form>
-          </CardContent>
         </Card>
       </div>
     </section>

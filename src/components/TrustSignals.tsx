@@ -7,58 +7,58 @@ export const TrustSignals: React.FC = () => {
   const certifications = [
     {
       title: 'ISO/IEC 17025',
-      subtitle: 'Accredited Calibration Standards',
+      subtitle: 'Accredited calibration standards',
       desc: 'Traceable measurements and accredited calibration certificates compliant with international testing standards.',
       icon: <Award className="w-7 h-7 text-blue-600 dark:text-blue-400" />,
     },
     {
       title: 'ISO 9001:2015',
-      subtitle: 'Quality Management Certified',
+      subtitle: 'Quality management certified',
       desc: 'Rigorous quality procedures ensuring consistent accuracy, traceability, and customer satisfaction.',
       icon: <ShieldCheck className="w-7 h-7 text-blue-600 dark:text-blue-400" />,
     },
     {
       title: 'ATEX & IECEx',
-      subtitle: 'Intrinsically Safe Compliance',
+      subtitle: 'Intrinsically safe compliance',
       desc: 'Certified intrinsically safe calibrators engineered for hazardous Zone 0, 1, and 2 environments.',
       icon: <Zap className="w-7 h-7 text-blue-600 dark:text-blue-400" />,
     },
     {
       title: 'FDA 21 CFR Part 11',
-      subtitle: 'Pharma Data Integrity',
+      subtitle: 'Pharma data integrity',
       desc: 'Tamper-proof audit trails, electronic signatures, and secure calibration data management for regulated plants.',
       icon: <FlaskConical className="w-7 h-7 text-blue-600 dark:text-blue-400" />,
     },
   ];
 
   const clientSectors = [
-    { name: 'Power Generation', icon: <Zap className="w-6 h-6" />, count: '25+ Plants' },
-    { name: 'Oil, Gas & Petrochem', icon: <Factory className="w-6 h-6" />, count: '15+ Refineries' },
-    { name: 'Pharma & Biotech', icon: <FlaskConical className="w-6 h-6" />, count: '30+ Facilities' },
-    { name: 'Food & Beverage', icon: <Building2 className="w-6 h-6" />, count: '40+ Manufacturers' },
+    { name: 'Power generation', icon: <Zap className="w-6 h-6" />, count: '25+ plants' },
+    { name: 'Oil, gas & petrochem', icon: <Factory className="w-6 h-6" />, count: '15+ refineries' },
+    { name: 'Pharma & biotech', icon: <FlaskConical className="w-6 h-6" />, count: '30+ facilities' },
+    { name: 'Food & beverage', icon: <Building2 className="w-6 h-6" />, count: '40+ manufacturers' },
   ];
 
   const caseStudies = [
     {
-      title: 'Major Power Generation Utility',
-      category: 'Power Generation',
-      result: '55% Reduction in Calibration Time',
+      title: 'Major power generation utility',
+      category: 'Power generation',
+      result: '55% reduction in calibration time',
       metric: '55% faster',
       summary:
         'Replaced disconnected manual gauges with Beamex MC6 documenting calibrators and integrated CMX software, slashing outage turnaround times.',
     },
     {
-      title: 'Leading Multinational Pharmaceutical Lab',
+      title: 'Leading multinational pharmaceutical lab',
       category: 'Pharmaceutical',
-      result: '100% Audit Readiness & Paperless Compliance',
+      result: '100% audit readiness & paperless compliance',
       metric: 'Zero audit findings',
       summary:
         'Eliminated manual paper certificates with Beamex automated digital workflows, achieving total FDA 21 CFR Part 11 data integrity compliance.',
     },
     {
-      title: 'Petrochemical Refining Complex',
-      category: 'Oil & Gas',
-      result: 'Zero Incidents in Hazardous Zone Calibrations',
+      title: 'Petrochemical refining complex',
+      category: 'Oil & gas',
+      result: 'Zero incidents in hazardous zone calibrations',
       metric: '100% ATEX certified',
       summary:
         'Standardized plant-wide on Beamex MC6-Ex intrinsically safe calibrators, ensuring technician safety without sacrificing precision.',
@@ -69,25 +69,25 @@ export const TrustSignals: React.FC = () => {
     {
       region: 'NCR & Central Luzon',
       city: 'Metro Manila (Quezon City HQ)',
-      role: 'Main Technical Hub & Calibration Laboratory',
+      role: 'Main technical hub & calibration laboratory',
       coverage: 'Metro Manila, Bataan, Subic, Clark, Pampanga, Bulacan',
     },
     {
       region: 'Southern Luzon',
       city: 'Calabarzon Field Operations',
-      role: 'On-Site Industrial Engineering Support',
+      role: 'On-site industrial engineering support',
       coverage: 'Batangas, Laguna, Cavite, Quezon industrial corridors',
     },
     {
-      region: 'Visayas Operations',
+      region: 'Visayas operations',
       city: 'Cebu City Regional Hub',
-      role: 'Regional Service & Equipment Dispatch',
+      role: 'Regional service & equipment dispatch',
       coverage: 'Cebu, Iloilo, Bacolod, Leyte manufacturing & energy plants',
     },
     {
-      region: 'Mindanao Hub',
+      region: 'Mindanao hub',
       city: 'Davao & Cagayan de Oro',
-      role: 'Field Service & Preventive Recalibration',
+      role: 'Field service & preventive recalibration',
       coverage: 'Agri-processing, mining, power generation facilities',
     },
   ];
@@ -99,10 +99,10 @@ export const TrustSignals: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-blue-900 dark:text-blue-300 text-xs sm:text-sm font-semibold mb-3">
             <ShieldCheck className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-            <span>Industrial Proof & Compliance</span>
+            <span>Industrial proof & compliance</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
-            Accredited Quality & Industry Certifications
+            Accredited quality & industry certifications
           </h2>
           <p className="text-muted-foreground text-sm sm:text-base mt-2">
             Industrial buyers require proven compliance. Our equipment, laboratories, and procedures adhere to the most stringent global standards.
@@ -120,7 +120,7 @@ export const TrustSignals: React.FC = () => {
                   {cert.icon}
                 </div>
                 <h3 className="font-extrabold text-xl text-foreground mb-1">{cert.title}</h3>
-                <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-2">
+                <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 tracking-wide mb-2">
                   {cert.subtitle}
                 </p>
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
@@ -137,7 +137,7 @@ export const TrustSignals: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-8">
             <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
-              Trusted Across Critical Industrial Sectors
+              Trusted across critical industrial sectors
             </h3>
             <p className="text-sm text-muted-foreground">
               Powering accuracy and safety in hundreds of process and manufacturing plants nationwide.
@@ -156,7 +156,7 @@ export const TrustSignals: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-sm text-foreground">{sector.name}</h4>
                   <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                    {sector.count} Served
+                    {sector.count} served
                   </span>
                 </div>
               </div>
@@ -171,10 +171,10 @@ export const TrustSignals: React.FC = () => {
           <div>
             <div className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold text-sm mb-1">
               <Award className="w-4 h-4" />
-              <span>Proven Results</span>
+              <span>Proven results</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-              Industrial Case Studies & ROI
+              Industrial case studies & ROI
             </h2>
           </div>
           <Link
@@ -194,7 +194,7 @@ export const TrustSignals: React.FC = () => {
             >
               <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">
+                  <span className="text-xs font-bold tracking-wide px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">
                     {study.category}
                   </span>
                   <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
@@ -228,10 +228,10 @@ export const TrustSignals: React.FC = () => {
                 <div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold mb-3">
                     <MapPin className="w-3.5 h-3.5 text-blue-400" />
-                    <span>Nationwide Technical Reach</span>
+                    <span>Nationwide technical reach</span>
                   </div>
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight mb-3">
-                    Philippine Service Coverage & Rapid Field Support
+                    Philippine service coverage & rapid field support
                   </h2>
                   <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                     Accuro delivers comprehensive calibration support across Luzon, Visayas, and Mindanao. Our certified metrology engineers and rapid logistics ensure your operations never experience unnecessary downtime.
@@ -257,15 +257,15 @@ export const TrustSignals: React.FC = () => {
                 <div className="pt-2 flex flex-wrap items-center gap-4">
                   <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300 font-medium">
                     <CheckCircle2 className="w-4 h-4 text-blue-400" />
-                    <span>Local Calibration Lab in QC</span>
+                    <span>Local calibration lab in QC</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300 font-medium">
                     <CheckCircle2 className="w-4 h-4 text-blue-400" />
-                    <span>On-Site Plant Recalibration</span>
+                    <span>On-site plant recalibration</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300 font-medium">
                     <CheckCircle2 className="w-4 h-4 text-blue-400" />
-                    <span>Finland Factory Link</span>
+                    <span>Finland factory link</span>
                   </div>
                 </div>
               </div>
@@ -274,8 +274,8 @@ export const TrustSignals: React.FC = () => {
               <div className="lg:col-span-5 flex justify-center">
                 <div className="relative w-full max-w-sm p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
                   <div className="text-center mb-4">
-                    <span className="text-xs font-bold uppercase tracking-widest text-blue-300">
-                      Regional Coverage Map
+                    <span className="text-xs font-bold tracking-wider text-blue-300">
+                      Regional coverage map
                     </span>
                     <h4 className="text-lg font-bold text-white">Republic of the Philippines</h4>
                   </div>
@@ -284,8 +284,8 @@ export const TrustSignals: React.FC = () => {
                   <div className="space-y-3 py-2">
                     <div className="p-3 rounded-lg bg-blue-600/20 border border-blue-400/30 text-left">
                       <div className="flex items-center justify-between text-xs font-bold text-blue-200">
-                        <span>LUZON (NCR / North / South)</span>
-                        <span className="px-2 py-0.5 rounded bg-blue-500/30 text-[10px]">Active Hub</span>
+                        <span>Luzon (NCR / North / South)</span>
+                        <span className="px-2 py-0.5 rounded bg-blue-500/30 text-[10px]">Active hub</span>
                       </div>
                       <p className="text-[11px] text-gray-300 mt-1">
                         Headquarters, primary calibration lab, fast-dispatch technicians.
@@ -294,8 +294,8 @@ export const TrustSignals: React.FC = () => {
 
                     <div className="p-3 rounded-lg bg-blue-600/20 border border-blue-400/30 text-left">
                       <div className="flex items-center justify-between text-xs font-bold text-blue-200">
-                        <span>VISAYAS (Cebu / Iloilo)</span>
-                        <span className="px-2 py-0.5 rounded bg-blue-500/30 text-[10px]">Active Hub</span>
+                        <span>Visayas (Cebu / Iloilo)</span>
+                        <span className="px-2 py-0.5 rounded bg-blue-500/30 text-[10px]">Active hub</span>
                       </div>
                       <p className="text-[11px] text-gray-300 mt-1">
                         Regional service center serving central industrial corridors.
@@ -304,8 +304,8 @@ export const TrustSignals: React.FC = () => {
 
                     <div className="p-3 rounded-lg bg-blue-600/20 border border-blue-400/30 text-left">
                       <div className="flex items-center justify-between text-xs font-bold text-blue-200">
-                        <span>MINDANAO (Davao / CDO)</span>
-                        <span className="px-2 py-0.5 rounded bg-blue-500/30 text-[10px]">Active Hub</span>
+                        <span>Mindanao (Davao / CDO)</span>
+                        <span className="px-2 py-0.5 rounded bg-blue-500/30 text-[10px]">Active hub</span>
                       </div>
                       <p className="text-[11px] text-gray-300 mt-1">
                         Dedicated service support for heavy industry, mining, and agro-refining.
@@ -316,7 +316,7 @@ export const TrustSignals: React.FC = () => {
                   <div className="mt-4 pt-4 border-t border-white/10">
                     <Link to="/contact">
                       <button className="w-full py-2.5 px-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition-colors flex items-center justify-center gap-2">
-                        <span>Request Service in Your Region</span>
+                        <span>Request service in your region</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </button>
                     </Link>

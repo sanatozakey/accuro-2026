@@ -44,7 +44,7 @@ export function Navbar() {
               to="/knowledge-hub"
               className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition"
             >
-              Knowledge Hub
+              Knowledge hub
             </Link>
             <Link
               to="/contact"
@@ -114,7 +114,7 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <BookOpen size={20} />
-                <span className="font-medium">Knowledge Hub</span>
+                <span className="font-medium">Knowledge hub</span>
               </Link>
               <Link
                 to="/contact"

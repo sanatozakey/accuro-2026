@@ -22,39 +22,39 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
   const videos: VideoItem[] = [
     {
       id: 'centrical-demo',
-      title: 'Beamex CENTRiCAL Workshop Solution',
+      title: 'Beamex CENTRiCAL workshop solution',
       subtitle: 'Ergonomic, standardized workshop test benches & trolleys',
       duration: '3:20',
       thumbnail: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       youtubeId: '7X8bA9j2K8g', // placeholder / official Beamex format
       beamexUrl: 'https://www.beamex.com/workshop-calibration/centrical/',
-      tag: 'Workshop Calibration',
+      tag: 'Workshop calibration',
       description:
         'Discover how Beamex CENTRiCAL integrates electrical testing, automated pressure generation, and documenting calibrators into an ergonomic, ESD-protected bench.',
       highlights: ['Customizable modular tabletop & rack layout', 'Centralized automated pressure generation', 'Direct connection to CMX software'],
     },
     {
       id: 'mc6-family',
-      title: 'Beamex MC6 Multifunction Field Calibrator',
+      title: 'Beamex MC6 multifunction field calibrator',
       subtitle: 'Field pressure, temperature & electrical calibration',
       duration: '4:15',
       thumbnail: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       youtubeId: '3d8K8jF0xKw',
       beamexUrl: 'https://www.beamex.com/calibrators/beamex-mc6/',
-      tag: 'Field Calibration',
+      tag: 'Field calibration',
       description:
         'A comprehensive walkthrough of the flagship Beamex MC6, showing its daylight-readable touchscreen, automated as-found/as-left procedures, and integrated multi-bus field communicator.',
       highlights: ['HART, Foundation Fieldbus, and Profibus communicator', 'Internal pressure modules with automated step testing', 'IP65 rugged field housing'],
     },
     {
       id: 'paperless-calibration',
-      title: 'Automated Paperless Calibration Explained',
+      title: 'Automated paperless calibration explained',
       subtitle: 'Eliminating manual transcription errors from field to ERP',
       duration: '5:30',
       thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       youtubeId: '9bZkp7q19f0',
       beamexUrl: 'https://www.beamex.com/resources/paperless-calibration/',
-      tag: 'Digital Ecosystem',
+      tag: 'Digital ecosystem',
       description:
         'Learn how an integrated calibration ecosystem connects documenting calibrators, mobile tablets, and calibration software directly to SAP PM or IBM Maximo without pen and paper.',
       highlights: ['Zero manual typing & 0% transcription errors', 'Complete audit trail compliance for ISO 17025 & FDA', 'Average 50% time savings per calibration'],
@@ -67,7 +67,7 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
       thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       youtubeId: '2b4r9t8v3x0',
       beamexUrl: 'https://www.beamex.com/calibration-software/logical/',
-      tag: 'Cloud & Mobile',
+      tag: 'Cloud & mobile',
       description:
         'Watch how field technicians use the free Beamex bMobile application on iOS and Android tablets to execute visual inspections, weighing scale calibrations, and synchronize with LOGiCAL Cloud.',
       highlights: ['Works fully offline in hazardous process units', 'Instant PDF calibration certificate generation', 'Low-barrier cloud SaaS setup with no servers'],
@@ -81,10 +81,10 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-800 dark:text-blue-300 text-xs sm:text-sm font-bold tracking-wide mb-3">
             <Film className="w-4 h-4 text-blue-600" />
-            Official Beamex Media Demonstrations
+            Official Beamex media demonstrations
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            See Beamex Calibration Technology in Action
+            See Beamex calibration technology in action
           </h2>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
             Explore product walkthroughs, workshop bench setups, and digital paperless workflow demonstrations.
@@ -115,7 +115,7 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
                 </div>
 
                 {/* Tag Badge */}
-                <div className="absolute top-3 left-3 bg-blue-600/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">
+                <div className="absolute top-3 left-3 bg-blue-600/90 text-white text-[10px] font-bold tracking-wide px-2 py-0.5 rounded">
                   {vid.tag}
                 </div>
 
@@ -139,7 +139,7 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
                 <div className="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400">
                   <span className="flex items-center gap-1">
                     <Play className="w-3 h-3 fill-current" />
-                    Watch Demonstration
+                    Watch demonstration
                   </span>
                   <span className="text-gray-400 group-hover:text-blue-600">→</span>
                 </div>
@@ -161,7 +161,7 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
               {/* Modal Header */}
               <div className="p-4 sm:p-5 border-b border-gray-200 dark:border-gray-800 flex items-center justify-between bg-gray-50 dark:bg-gray-800/50">
                 <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300">
+                  <span className="px-2 py-0.5 rounded text-[10px] font-bold tracking-wide bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300">
                     {activeVideo.tag}
                   </span>
                   <h4 className="font-bold text-sm sm:text-base text-gray-900 dark:text-gray-100 truncate max-w-md">
@@ -198,13 +198,13 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Watch on Official Beamex YouTube
+                        Watch on official Beamex YouTube
                         <ExternalLink className="ml-1.5 w-3.5 h-3.5" />
                       </a>
                     </Button>
                     <Button asChild variant="outline" size="sm" className="text-white border-white/40 hover:bg-white/10">
                       <a href={activeVideo.beamexUrl} target="_blank" rel="noopener noreferrer">
-                        Product Documentation
+                        Product documentation
                         <ExternalLink className="ml-1.5 w-3.5 h-3.5" />
                       </a>
                     </Button>
@@ -214,8 +214,8 @@ export const BeamexVideoSection: React.FC<{ className?: string }> = ({ className
 
               {/* Video Key Takeaways */}
               <div className="p-5 bg-white dark:bg-gray-900 overflow-y-auto">
-                <h6 className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2.5">
-                  Demonstration Highlights:
+                <h6 className="text-xs font-bold tracking-wide text-gray-500 dark:text-gray-400 mb-2.5">
+                  Demonstration highlights:
                 </h6>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-gray-700 dark:text-gray-300">
                   {activeVideo.highlights.map((h, i) => (

@@ -22,21 +22,21 @@ const BeamexServices: React.FC = () => {
     {
       icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: 'Expert guidance',
-      badge: 'Certified Metrologists',
+      badge: 'Certified metrologists',
       description:
         'World-leading specialists and local Filipino calibration engineers with deep industry knowledge and process calibration expertise.',
     },
     {
       icon: <Shield className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: 'Full lifecycle support',
-      badge: 'End-to-End Care',
+      badge: 'End-to-end care',
       description:
         'Comprehensive services from implementation, system design, and data migration to ongoing maintenance and process optimization.',
     },
     {
       icon: <Award className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: 'Quality assurance',
-      badge: 'ISO/IEC 17025 Traceable',
+      badge: 'ISO/IEC 17025 traceable',
       description:
         'Accredited calibration certificates and traceable measurement standards to satisfy the most demanding regulatory audits.',
     },
@@ -45,8 +45,8 @@ const BeamexServices: React.FC = () => {
   // Expert services with people and action imagery
   const expertServices = [
     {
-      title: 'System Onboarding & Migration',
-      badge: 'Seamless Adoption',
+      title: 'System onboarding & migration',
+      badge: 'Seamless adoption',
       icon: <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       description:
         'Our technical team guides you through software architecture, data migration, and hypercare support for both Beamex CMX and LOGiCAL systems.',
@@ -55,8 +55,8 @@ const BeamexServices: React.FC = () => {
       highlights: ['Legacy database migration', 'Custom workflow mapping', 'Dedicated hypercare period'],
     },
     {
-      title: 'Hands-on Training & Certification',
-      badge: 'Technician Upskilling',
+      title: 'Hands-on training & certification',
+      badge: 'Technician upskilling',
       icon: <GraduationCap className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       description:
         'Empower your team with practical calibration workshops, classroom lectures, and e-learning courses conducted by certified specialists.',
@@ -65,8 +65,8 @@ const BeamexServices: React.FC = () => {
       highlights: ['Interactive equipment drills', 'Local language support', 'Operator competency certificates'],
     },
     {
-      title: 'Technical Support & Helpdesk',
-      badge: 'Direct Specialist Access',
+      title: 'Technical support & helpdesk',
+      badge: 'Direct specialist access',
       icon: <HeadphonesIcon className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       description:
         'Rapid response troubleshooting, firmware assistance, and application engineering support to keep your operations running uninterrupted.',
@@ -75,8 +75,8 @@ const BeamexServices: React.FC = () => {
       highlights: ['Priority ticket response', 'Remote diagnostics', 'Application advice from engineers'],
     },
     {
-      title: 'Software Service Agreements',
-      badge: 'Continuous Updates',
+      title: 'Software service agreements',
+      badge: 'Continuous updates',
       icon: <ShieldCheck className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       description:
         'Protect and maximize your software investment with scheduled upgrades, security patches, cloud backups, and compliance enhancements.',
@@ -89,7 +89,7 @@ const BeamexServices: React.FC = () => {
   const servicePlans = [
     {
       name: 'Beamex Care Plan',
-      badge: 'Comprehensive Warranty & Service',
+      badge: 'Comprehensive warranty & service',
       image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       features: [
         'Free repairs, including accidental equipment damage',
@@ -101,7 +101,7 @@ const BeamexServices: React.FC = () => {
     },
     {
       name: 'Beamex Calibration Plan',
-      badge: 'Periodic Recalibration Service',
+      badge: 'Periodic recalibration service',
       image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       features: [
         'Designed for existing equipment and legacy models',
@@ -141,10 +141,10 @@ const BeamexServices: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-600/30 border border-blue-400/30 text-blue-200 text-xs sm:text-sm font-semibold mb-4">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            <span>Dedicated Metrology & Support Engineers</span>
+            <span>Dedicated metrology & support engineers</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg tracking-tight">
-            Expert Services, Training & Support
+            Expert services, training & support
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
             Partner with Beamex-certified calibration specialists. From initial consultation and training to accredited recalibration and lifecycle maintenance, we keep your equipment operating with pinpoint accuracy.
@@ -157,7 +157,7 @@ const BeamexServices: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-              Comprehensive Service Value
+              Comprehensive service value
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Beyond supplying world-class instruments, Accuro and Beamex provide the engineering expertise and human support essential for peak industrial performance.
@@ -174,7 +174,7 @@ const BeamexServices: React.FC = () => {
                   <div className="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center mx-auto mb-4">
                     {item.icon}
                   </div>
-                  <span className="inline-block text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 mb-3">
+                  <span className="inline-block text-[11px] font-bold tracking-wide px-2.5 py-1 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 mb-3">
                     {item.badge}
                   </span>
                   <h3 className="font-bold text-xl mb-2 text-foreground">{item.title}</h3>
@@ -193,10 +193,10 @@ const BeamexServices: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold text-sm mb-2">
             <Users className="w-5 h-5" />
-            <span>People-Powered Support</span>
+            <span>People-powered support</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-            Calibration Solution Services
+            Calibration solution services
           </h2>
           <p className="text-muted-foreground text-base leading-relaxed">
             Our certified specialists work shoulder-to-shoulder with your engineering staff to ensure smooth adoption, proper training, and reliable ongoing operations.
@@ -257,7 +257,7 @@ const BeamexServices: React.FC = () => {
             rel="noopener noreferrer"
           >
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white gap-2">
-              Read More on Beamex Expert Services <ArrowRight className="w-4 h-4" />
+              Read more on Beamex expert services <ArrowRight className="w-4 h-4" />
             </Button>
           </a>
         </div>
@@ -268,7 +268,7 @@ const BeamexServices: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-              Equipment Recalibration & Protection Plans
+              Equipment recalibration & protection plans
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
               Maintain equipment measurement uncertainty, satisfy ISO 9001/ISO 17025 compliance, and protect your investments through official Beamex service agreements.
@@ -315,7 +315,7 @@ const BeamexServices: React.FC = () => {
                     className="mt-auto"
                   >
                     <Button variant="outline" className="w-full gap-2 border-2 hover:bg-blue-600 hover:text-white">
-                      Explore {plan.name} Details <ArrowRight className="w-4 h-4" />
+                      Explore {plan.name} details <ArrowRight className="w-4 h-4" />
                     </Button>
                   </a>
                 </CardContent>
@@ -327,13 +327,13 @@ const BeamexServices: React.FC = () => {
 
       {/* Contact CTA Section */}
       <ContactCTA
-        productCategory="Beamex Services"
+        productCategory="Beamex services"
         solution="beamex-services"
-        model="Beamex Service Agreement & Recalibration"
+        model="Beamex service agreement & recalibration"
         inquiryType="quote"
-        title="Consult Our Calibration Specialists"
+        title="Consult our calibration specialists"
         description="Connect with Accuro's certified service engineers to discuss tailored training, accredited recalibration schedules, or service plan coverage."
-        buttonText="Request Service Agreement Proposal"
+        buttonText="Request service agreement proposal"
       />
     </div>
   );

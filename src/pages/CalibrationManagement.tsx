@@ -19,29 +19,29 @@ import { ContactCTA } from '../components/ContactCTA';
 const CalibrationManagement: React.FC = () => {
   const valuePropositions = [
     {
-      title: 'Automated Scheduling & Alerts',
-      badge: 'Zero Overdue Assets',
+      title: 'Automated scheduling & alerts',
+      badge: 'Zero overdue assets',
       icon: <Layers className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Proactively tracks instrument positions, inspection schedules, and calibration due dates, preventing overdue tags and audit non-conformities.',
     },
     {
-      title: '100% Paperless Data Flow',
-      badge: 'Zero Transcription Errors',
+      title: '100% paperless data flow',
+      badge: 'Zero transcription errors',
       icon: <FileCheck2 className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Synchronizes directly with Beamex documenting calibrators to upload work orders and download completed results without pen and paper.',
     },
     {
-      title: 'Audit Readiness & 21 CFR Part 11',
-      badge: 'Regulatory Compliance',
+      title: 'Audit readiness & 21 CFR Part 11',
+      badge: 'Regulatory compliance',
       icon: <ShieldCheck className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Features electronic signatures, tamper-evident audit trails, and instant PDF calibration certificates complying with FDA 21 CFR Part 11 and ISO 17025.',
     },
     {
-      title: 'Cloud & On-Premises Options',
-      badge: 'Flexible Architecture',
+      title: 'Cloud & on-premises options',
+      badge: 'Flexible architecture',
       icon: <Cloud className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Choose Beamex LOGiCAL for instant SaaS cloud deployment, or Beamex CMX for enterprise on-premises database with ERP integration.',
@@ -49,13 +49,13 @@ const CalibrationManagement: React.FC = () => {
   ];
 
   const comparisonRows = [
-    { feature: 'Deployment Mode', logical: '100% Cloud (SaaS)', cmx: 'On-Premises Server or Private Cloud' },
-    { feature: 'Target Audience', logical: 'Agile plants & multi-site teams', cmx: 'Enterprise industrial & regulated plants' },
-    { feature: 'IT Maintenance', logical: 'Zero local server maintenance', cmx: 'Internal IT infrastructure management' },
-    { feature: 'Beamex Calibrator Sync', logical: 'Yes (Web / Beamex bMobile)', cmx: 'Yes (Direct USB / Network / bMobile)' },
-    { feature: 'ERP / CMMS Integration', logical: 'API / Export capabilities', cmx: 'Direct SAP PM, IBM Maximo, Emerson AMS' },
+    { feature: 'Deployment mode', logical: '100% cloud (SaaS)', cmx: 'On-premises server or private cloud' },
+    { feature: 'Target audience', logical: 'Agile plants & multi-site teams', cmx: 'Enterprise industrial & regulated plants' },
+    { feature: 'IT maintenance', logical: 'Zero local server maintenance', cmx: 'Internal IT infrastructure management' },
+    { feature: 'Beamex calibrator sync', logical: 'Yes (web / Beamex bMobile)', cmx: 'Yes (direct USB / network / bMobile)' },
+    { feature: 'ERP / CMMS integration', logical: 'API / export capabilities', cmx: 'Direct SAP PM, IBM Maximo, Emerson AMS' },
     { feature: 'FDA 21 CFR Part 11', logical: 'Secure audit logs', cmx: 'Full compliant module & e-signatures' },
-    { feature: 'Pricing Model', logical: 'Usage-based annual subscription', cmx: 'Perpetual licenses with maintenance' },
+    { feature: 'Pricing model', logical: 'Usage-based annual subscription', cmx: 'Perpetual licenses with maintenance' },
   ];
 
   return (
@@ -86,10 +86,10 @@ const CalibrationManagement: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-600/30 border border-blue-400/30 text-blue-200 text-xs sm:text-sm font-semibold mb-4">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            <span>Digital Calibration Ecosystem</span>
+            <span>Digital calibration ecosystem</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-tight drop-shadow-lg">
-            Calibration Management Software
+            Calibration management software
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
             Streamline your asset lifecycle, eliminate paperwork, and automate calibration execution with Beamex LOGiCAL (Cloud) and Beamex CMX (Enterprise).
@@ -102,7 +102,7 @@ const CalibrationManagement: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-              Why Digitize with Beamex Software?
+              Why digitize with Beamex software?
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Manual spreadsheets and paper binders cause up to 5% transcription error rates and fail audits. A dedicated CMS guarantees automated traceability.
@@ -120,7 +120,7 @@ const CalibrationManagement: React.FC = () => {
                     <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center">
                       {item.icon}
                     </div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
+                    <span className="text-[11px] font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
                       {item.badge}
                     </span>
                   </div>
@@ -151,12 +151,12 @@ const CalibrationManagement: React.FC = () => {
             </div>
 
             <div className="lg:col-span-7 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 text-xs font-bold tracking-wider">
                 <Cloud className="w-3.5 h-3.5" />
-                <span>Cloud-Hosted SaaS Platform</span>
+                <span>Cloud-hosted SaaS platform</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-                Beamex LOGiCAL Calibration Software
+                Beamex LOGiCAL calibration software
               </h2>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Beamex LOGiCAL is a modern, subscription-based calibration management platform. Accessible from any modern browser, LOGiCAL lets teams get up and running in minutes with zero IT infrastructure costs.
@@ -188,7 +188,7 @@ const CalibrationManagement: React.FC = () => {
                   rel="noopener noreferrer"
                 >
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white gap-2">
-                    Explore LOGiCAL Details <ArrowRight className="w-4 h-4" />
+                    Explore LOGiCAL details <ArrowRight className="w-4 h-4" />
                   </Button>
                 </a>
               </div>
@@ -210,12 +210,12 @@ const CalibrationManagement: React.FC = () => {
             </div>
 
             <div className="lg:col-span-7 space-y-4 lg:order-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-bold tracking-wider">
                 <Server className="w-3.5 h-3.5" />
-                <span>Enterprise On-Premises & Validated</span>
+                <span>Enterprise on-premises & validated</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-                Beamex CMX Enterprise Calibration Software
+                Beamex CMX enterprise calibration software
               </h2>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Beamex CMX is an all-in-one enterprise calibration solution engineered for complex industrial plants, regulated pharmaceutical sites, and heavy manufacturing with stringent compliance and ERP integration requirements.
@@ -247,7 +247,7 @@ const CalibrationManagement: React.FC = () => {
                   rel="noopener noreferrer"
                 >
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white gap-2">
-                    Explore CMX Capabilities <ArrowRight className="w-4 h-4" />
+                    Explore CMX capabilities <ArrowRight className="w-4 h-4" />
                   </Button>
                 </a>
               </div>
@@ -273,8 +273,8 @@ const CalibrationManagement: React.FC = () => {
               <thead className="bg-muted text-foreground border-b border-border font-bold">
                 <tr>
                   <th className="p-4 sm:p-5">Feature</th>
-                  <th className="p-4 sm:p-5 text-blue-600 dark:text-blue-400">Beamex LOGiCAL (Cloud)</th>
-                  <th className="p-4 sm:p-5 text-indigo-600 dark:text-indigo-400">Beamex CMX (Enterprise)</th>
+                  <th className="p-4 sm:p-5 text-blue-600 dark:text-blue-400">Beamex LOGiCAL (cloud)</th>
+                  <th className="p-4 sm:p-5 text-indigo-600 dark:text-indigo-400">Beamex CMX (enterprise)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
@@ -295,12 +295,12 @@ const CalibrationManagement: React.FC = () => {
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-8 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold tracking-wider">
               <Smartphone className="w-3.5 h-3.5" />
-              <span>Mobile Field Execution</span>
+              <span>Mobile field execution</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-              Beamex bMobile 2.0 Calibration Application
+              Beamex bMobile 2.0 calibration application
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
               Use standard mobile tablets and smartphones (iOS, Android, Windows) to execute calibrations and plant inspections offline in the field. Seamlessly upload completed checklists to LOGiCAL or CMX when reconnected to network.
@@ -321,7 +321,7 @@ const CalibrationManagement: React.FC = () => {
           <div className="lg:col-span-4 flex justify-center">
             <div className="p-6 rounded-2xl bg-muted/50 border border-border text-center space-y-3 w-full">
               <Smartphone className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto" />
-              <h3 className="font-bold text-base text-foreground">Mobile & Offline Capable</h3>
+              <h3 className="font-bold text-base text-foreground">Mobile & offline capable</h3>
               <p className="text-xs text-muted-foreground">
                 Document non-communicating instruments, safety valves, and weighing scales directly on your phone or tablet.
               </p>
@@ -332,13 +332,13 @@ const CalibrationManagement: React.FC = () => {
 
       {/* Contact CTA Section */}
       <ContactCTA
-        productCategory="Calibration Management"
+        productCategory="Calibration management"
         solution="calibration-management"
-        model="Beamex CMX & LOGiCAL Software"
+        model="Beamex CMX & LOGiCAL software"
         inquiryType="quote"
-        title="Schedule a Software Architecture Consultation"
+        title="Schedule a software architecture consultation"
         description="Our software engineers can help evaluate your workflows and demonstrate how Beamex LOGiCAL or CMX can transform your plant's data integrity."
-        buttonText="Request Software Demo & Pricing"
+        buttonText="Request software demo & pricing"
       />
     </div>
   );

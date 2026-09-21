@@ -30,7 +30,7 @@ export function ContactCTA({
   if (model) params.set('model', model);
 
   const contactUrl = `/contact?${params.toString()}`;
-  const displayButtonText = buttonText || (inquiryType === 'quote' ? 'Request an Official Quote' : 'Get in touch');
+  const displayButtonText = buttonText || (inquiryType === 'quote' ? 'Request an official quote' : 'Get in touch');
 
   return (
     <section className="py-12 md:py-16 bg-gradient-to-br from-navy-900 via-navy-800 to-blue-900 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 text-white">

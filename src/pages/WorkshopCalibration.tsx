@@ -10,21 +10,21 @@ const WorkshopCalibration: React.FC = () => {
   const valuePropositions = [
     {
       title: 'Modular design',
-      badge: 'Future-Proof & Scalable',
+      badge: 'Future-proof & scalable',
       icon: <Settings className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Easily configure and expand your workshop solution with modular components that grow with your calibration needs over time.',
     },
     {
       title: 'Digital integration',
-      badge: '100% Paperless Workflow',
+      badge: '100% paperless workflow',
       icon: <Laptop className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Seamlessly connect with Beamex calibration management software (CMX & LOGiCAL) for paperless, automated workflows and traceable compliance.',
     },
     {
       title: 'Flexible configurations',
-      badge: 'Ergonomic & Adaptable',
+      badge: 'Ergonomic & adaptable',
       icon: <Package className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       description:
         'Choose from bench, trolley, or tabletop configurations to fit your exact workshop footprint, laboratory space, and workflow requirements.',
@@ -35,7 +35,7 @@ const WorkshopCalibration: React.FC = () => {
   const configurations = [
     {
       name: 'CENTRiCAL bench',
-      badge: 'Fixed Calibration Station',
+      badge: 'Fixed calibration station',
       image: 'https://www.beamex.com/app/uploads/2020/05/CENTRiCAL-straight-bench-1.jpg',
       fallbackImage: '/images/Beamex CENTRiCAL.png',
       description:
@@ -44,7 +44,7 @@ const WorkshopCalibration: React.FC = () => {
     },
     {
       name: 'CENTRiCAL trolley',
-      badge: 'Mobile Workshop Solution',
+      badge: 'Mobile workshop solution',
       image: 'https://www.beamex.com/app/uploads/2020/05/CENTRiCAL-trolley.jpg',
       fallbackImage: '/images/Workshop Calibration.jpg',
       description:
@@ -53,7 +53,7 @@ const WorkshopCalibration: React.FC = () => {
     },
     {
       name: 'CENTRiCAL tabletop',
-      badge: 'Compact & Portable Case',
+      badge: 'Compact & portable case',
       image: 'https://www.beamex.com/app/uploads/2020/05/CENTRiCAL-tabletop.jpg',
       fallbackImage: '/images/Beamex MC6-WS.png',
       description:
@@ -90,10 +90,10 @@ const WorkshopCalibration: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-600/30 border border-blue-400/30 text-blue-200 text-xs sm:text-sm font-semibold mb-4">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            <span>Standardized Yet Configurable</span>
+            <span>Standardized yet configurable</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg tracking-tight">
-            Beamex CENTRiCAL Workshop Calibration
+            Beamex CENTRiCAL workshop calibration
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-200 drop-shadow-md">
             The central place for all your workshop calibrations. Standardized yet configurable, easy to use, versatile, and ergonomic.
@@ -106,7 +106,7 @@ const WorkshopCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-              Why Choose Beamex CENTRiCAL?
+              Why choose Beamex CENTRiCAL?
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Built on decades of Nordic engineering and calibration expertise to maximize efficiency, safety, and compliance in your workshop.
@@ -124,7 +124,7 @@ const WorkshopCalibration: React.FC = () => {
                     <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center">
                       {item.icon}
                     </div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
+                    <span className="text-[11px] font-bold tracking-wide px-2.5 py-1 rounded-full bg-blue-100/80 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
                       {item.badge}
                     </span>
                   </div>
@@ -145,13 +145,13 @@ const WorkshopCalibration: React.FC = () => {
           <div className="space-y-5">
             <div className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold text-sm">
               <ShieldCheck className="w-5 h-5" />
-              <span>Decades of Proven Expertise</span>
+              <span>Decades of proven expertise</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-              A Central Station for All Your Workshop Calibrations
+              A central station for all your workshop calibrations
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-              The Beamex CENTRiCAL Workshop Calibration Solution reflects the result of decades of experience providing world-class solutions for the process industries.
+              The Beamex CENTRiCAL workshop calibration solution reflects the result of decades of experience providing world-class solutions for the process industries.
             </p>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
               The modular architecture makes CENTRiCAL exceptionally versatile: configure it according to your exact needs, with the flexibility to add, upgrade, or interchange modules as your process expands.
@@ -173,7 +173,7 @@ const WorkshopCalibration: React.FC = () => {
               <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 dark:from-navy-950 dark:to-navy-900 flex items-center justify-center p-6 sm:p-8">
                 <img
                   src="/images/Beamex CENTRiCAL.png"
-                  alt="Beamex CENTRiCAL Workshop Calibration Solution"
+                  alt="Beamex CENTRiCAL workshop calibration solution"
                   className="max-w-full max-h-full object-contain drop-shadow-md hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -187,7 +187,7 @@ const WorkshopCalibration: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-              Available CENTRiCAL Configurations
+              Available CENTRiCAL configurations
             </h2>
             <p className="text-muted-foreground text-base">
               Tailored to your workspace: choose the form factor that best fits your calibration volume, floor layout, and operational mobility requirements.
@@ -213,7 +213,7 @@ const WorkshopCalibration: React.FC = () => {
                     }}
                     className="max-h-full max-w-full object-contain hover:scale-105 transition-transform duration-300"
                   />
-                  <span className="absolute top-3 right-3 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-navy-900/85 text-white backdrop-blur-sm border border-white/20">
+                  <span className="absolute top-3 right-3 text-[11px] font-bold tracking-wide px-2.5 py-1 rounded-full bg-navy-900/85 text-white backdrop-blur-sm border border-white/20">
                     {config.badge}
                   </span>
                 </div>
@@ -227,8 +227,8 @@ const WorkshopCalibration: React.FC = () => {
                   </p>
 
                   <div className="border-t border-border pt-4 mt-auto">
-                    <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
-                      Key Highlights:
+                    <h4 className="text-xs font-semibold text-foreground tracking-wide mb-2">
+                      Key highlights:
                     </h4>
                     <ul className="space-y-1.5">
                       {config.highlights.map((item, hIdx) => (
@@ -250,7 +250,7 @@ const WorkshopCalibration: React.FC = () => {
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-            Benefit from a Fully Digital Workflow
+            Benefit from a fully digital workflow
           </h2>
           <p className="text-muted-foreground text-base max-w-2xl mx-auto">
             Eliminate error-prone manual paper entry with automated data communication between workshop calibrators and calibration software.
@@ -261,7 +261,7 @@ const WorkshopCalibration: React.FC = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-bold text-foreground mb-2">
-                Connect with Calibration Management Software
+                Connect with calibration management software
               </h3>
               <p className="text-muted-foreground leading-relaxed">
                 The MC6-WS Advanced Workshop Calibrator and Communicator is the heart of the CENTRiCAL workshop solution. It is a documenting calibrator that communicates directly with Beamex calibration management software (LOGiCAL or CMX), creating an unbroken digital thread of calibration records.
@@ -270,7 +270,7 @@ const WorkshopCalibration: React.FC = () => {
 
             <div>
               <h3 className="text-xl font-bold text-foreground mb-2">
-                Manage What, How, and When
+                Manage what, how, and when
               </h3>
               <p className="text-muted-foreground leading-relaxed">
                 Use Beamex calibration software to schedule calibrations, store historical trends, assign tolerances, and automatically execute calibration procedures with the MC6-WS without human transcription errors.
@@ -284,7 +284,7 @@ const WorkshopCalibration: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white gap-2">
-                  Read More About CENTRiCAL <ArrowRight className="w-4 h-4" />
+                  Read more about CENTRiCAL <ArrowRight className="w-4 h-4" />
                 </Button>
               </a>
             </div>
@@ -295,7 +295,7 @@ const WorkshopCalibration: React.FC = () => {
               <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100 dark:from-navy-950 dark:to-navy-900 flex items-center justify-center p-8">
                 <img
                   src="/images/Beamex MC6-WS.png"
-                  alt="Beamex MC6-WS Workshop Calibrator"
+                  alt="Beamex MC6-WS workshop calibrator"
                   className="max-w-full max-h-full object-contain drop-shadow-lg"
                 />
               </div>
@@ -306,13 +306,13 @@ const WorkshopCalibration: React.FC = () => {
 
       {/* Contact CTA Section */}
       <ContactCTA
-        productCategory="Workshop Calibration"
+        productCategory="Workshop calibration"
         solution="workshop-calibration"
-        model="Beamex CENTRiCAL Modular Bench"
+        model="Beamex CENTRiCAL modular bench"
         inquiryType="quote"
-        title="Transform Your Workshop Calibration"
+        title="Transform your workshop calibration"
         description="Discover how the Beamex CENTRiCAL solution can streamline your workshop operations with modular, professional calibration capabilities."
-        buttonText="Request Official Bench Quotation"
+        buttonText="Request official bench quotation"
       />
     </div>
   );

@@ -22,47 +22,47 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    pill: 'Beamex CENTRiCAL Solutions',
-    badge: 'Modular Workshop Systems',
-    title: 'Next-Generation Workshop Calibration',
+    pill: 'Beamex CENTRiCAL solutions',
+    badge: 'Modular workshop systems',
+    title: 'Next-generation workshop calibration',
     description:
       'Standardized yet configurable Beamex CENTRiCAL test benches, trolleys, and tabletop cases. Ergonomic, modular, and built for precision calibration and automated testing.',
     image: 'https://www.beamex.com/app/uploads/2024/04/header_image_workshop_calibration_v1-scaled.jpg',
     fallbackImage: '/images/Workshop Calibration.jpg',
-    imageTag: 'CENTRiCAL Modular Calibration Bench',
-    primaryCtaText: 'Explore Workshop Solutions',
+    imageTag: 'CENTRiCAL modular calibration bench',
+    primaryCtaText: 'Explore workshop solutions',
     primaryCtaLink: '/beamex/workshop-calibration',
-    secondaryCtaText: 'Request Bench Quote',
+    secondaryCtaText: 'Request bench quote',
     secondaryCtaLink: '/contact?type=quote&solution=workshop-calibration&model=Beamex%20CENTRiCAL%20Bench',
   },
   {
     id: 2,
-    pill: 'Beamex MC6 Calibrator Family',
-    badge: 'Portable Documenting Calibrators',
-    title: 'Precision in the Field, Trusted Everywhere',
+    pill: 'Beamex MC6 calibrator family',
+    badge: 'Portable documenting calibrators',
+    title: 'Precision in the field, trusted everywhere',
     description:
       'Advanced Beamex MC6 and MC6-Ex documenting calibrators and multi-bus communicators. Unmatched accuracy and ATEX/IECEx intrinsic safety in harsh industrial environments.',
     image: '/images/Field Calibrators.png',
     fallbackImage: 'https://www.beamex.com/app/uploads/2024/04/header_image_beamex_solution_overview_v1-scaled.jpg',
-    imageTag: 'MC6 Advanced Field Calibrator & Communicator',
-    primaryCtaText: 'View Field Calibrators',
+    imageTag: 'MC6 advanced field calibrator & communicator',
+    primaryCtaText: 'View field calibrators',
     primaryCtaLink: '/beamex/field-calibration',
-    secondaryCtaText: 'Request MC6 Quote',
+    secondaryCtaText: 'Request MC6 quote',
     secondaryCtaLink: '/contact?type=quote&solution=field-calibration&model=Beamex%20MC6%20Calibrator',
   },
   {
     id: 3,
     pill: 'Beamex CMX & LOGiCAL',
-    badge: 'Cloud & On-Premises CMS',
-    title: '100% Paperless & Audit-Ready Calibration',
+    badge: 'Cloud & on-premises CMS',
+    title: '100% paperless & audit-ready calibration',
     description:
       'Eliminate manual errors and streamline asset compliance. Cloud-based LOGiCAL and enterprise on-premises CMX software create an unbroken, traceable digital audit trail for your plant.',
     image: '/images/Calibration Management.webp',
     fallbackImage: 'https://www.beamex.com/app/uploads/2022/09/cmx-calibration-software-1280-720px-v1.jpg',
-    imageTag: 'Digital Calibration Management Software',
-    primaryCtaText: 'Discover Software Solutions',
+    imageTag: 'Digital calibration management software',
+    primaryCtaText: 'Discover software solutions',
     primaryCtaLink: '/beamex/calibration-management',
-    secondaryCtaText: 'Request Software Quote',
+    secondaryCtaText: 'Request software quote',
     secondaryCtaLink: '/contact?type=quote&solution=calibration-management&model=Beamex%20CMX%20Software',
   },
 ];
@@ -236,8 +236,8 @@ export const HeroSlider: React.FC = () => {
                     <Sparkles className="w-4 h-4 text-blue-400" />
                     {slide.pill}
                   </span>
-                  <span className="text-xs text-slate-400 uppercase tracking-widest font-mono">
-                    Official Beamex Hardware
+                  <span className="text-xs text-slate-400 tracking-wider font-mono">
+                    Official Beamex hardware
                   </span>
                 </div>
 
@@ -274,7 +274,7 @@ export const HeroSlider: React.FC = () => {
                       {slide.imageTag}
                     </p>
                     <p className="text-xs text-slate-400">
-                      Standardized & Configurable for Process Industries
+                      Standardized & configurable for process industries
                     </p>
                   </div>
                   <Link
