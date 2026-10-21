@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Building2, Target, Users, Award, TrendingUp, Shield, ShieldCheck, CheckCircle2, ArrowRight, ExternalLink } from 'lucide-react'
+import { Building2, Target, Users, Award, TrendingUp, Shield, ShieldCheck, CheckCircle2, ArrowRight, ExternalLink, Factory } from 'lucide-react'
 import { Button } from '../components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card'
 import { BeamexPartnerBadge } from '../components/BeamexPartnerBadge'
@@ -345,19 +345,19 @@ export function About() {
                 <div className="h-48 overflow-hidden rounded-t-lg">
                   <img
                     src="/images/Compliance-driven industries with skilled workforce.png"
-                    alt="Regulated & compliance-driven industries"
+                    alt="Manufacturing industries"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </CardHeader>
               <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 mb-3 min-h-[36px]">
-                  <Shield className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <CardTitle className="text-xl">Regulated industries</CardTitle>
+                  <Factory className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                  <CardTitle className="text-xl">Manufacturing industries</CardTitle>
                 </div>
                 <CardDescription className="text-base text-gray-700 flex-grow">
-                  Supporting compliance-driven industries requiring strict regulatory
-                  standards with certified calibration equipment and expert technical personnel.
+                  Supporting manufacturing industries requiring strict quality and
+                  regulatory standards with certified calibration equipment and expert technical personnel.
                 </CardDescription>
               </CardContent>
             </Card>
